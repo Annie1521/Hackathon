@@ -93,10 +93,10 @@ courseInfoObj = {
             }
         },
         Languages: {
-            LVV4U: {
-                simpleName: 'Classical Civilization',
-                sections: ['Prehistoric and Bronze Age Greece', 'Archaic Greece', 'Classical Greece', 'Roman Republic', 'Roman Empire'],
-                summativeType: ''
+            FSF4U: {
+                simpleName: 'French',
+                sections: ['French Speaking World', 'Social Media', 'Art and Culture', 'Careers'],
+                summativeType: 'Exam'
             }
         },
         'Health and Physical Education': {
