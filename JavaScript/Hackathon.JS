@@ -3,11 +3,45 @@ function showGrades(){
     for(i=9; i<13; i++){
 
 var gradeBtn= document.createElement('button')
-var gradeTxt = document.createTextNode('Grade' + i)
-gradeBtn.id = ('Grade ' + i)
+var gradeTxt = document.createTextNode('Grade ' + i)
+gradeBtn.id = ('Grade' + i)
 gradeBtn.appendChild(gradeTxt)
 document.body.appendChild(gradeBtn)
     }//end of loop
+document.getElementById('Grade9').addEventListener('click', function(){
+    grade = 9
+    showTopics()
+})
+document.getElementById('Grade10').addEventListener('click', function(){
+    grade = 10
+    showTopics()
+})
+document.getElementById('Grade11').addEventListener('click', function(){
+    grade = 11
+    showTopics()
+})
+document.getElementById('Grade12').addEventListener('click', function(){
+    grade = 12
+    showTopics()
+})
+
 }//end of showGrades
 
 showGrades()
+
+function showTopics(){
+
+var topicButton = document.createElement('button')
+var topicButtonTxt = document.createTextNode(topics[j])
+
+var topics = ['English', 'STEM', 'Art', 'Languages'] 
+
+for (j=0; j<3; j++){
+var topicButton = document.createElement('button')
+var topicButtonTxt = document.createTextNode(topics[j])
+topicButton.appendChild(topicButtonTxt)
+}//end of loop
+
+}//end of showTopics
+
+
