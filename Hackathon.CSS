@@ -1,0 +1,70 @@
+#TitleDiv{
+    width: 99%;
+    margin-top:7%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#title{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+
+#GradeDiv{
+    width: 99%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#Grade9{
+    background-color: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#Grade10{
+    background: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#Grade11{
+    background: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#Grade12{
+    background: #BCE3FA;
+    width: 100px;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}

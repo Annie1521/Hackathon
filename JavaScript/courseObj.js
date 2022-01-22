@@ -17,13 +17,6 @@ courseInfoObj = {
                 summativeType: ''
             }
         },
-        French: {
-            FSF4U: {
-                simpleName: 'French',
-                sections: ['French Speaking World', 'Social Media', 'Art and Culture', 'Careers'],
-                summativeType: 'Exam'
-            }
-        },
         Mathematics: {
             MCV4U: {
                 simpleName: 'Calculus',
@@ -89,6 +82,11 @@ courseInfoObj = {
             HZT4U: {
                 simpleName: 'Philosophy',
                 sections: ['Philosophical Foundations', 'Metaphysics', 'Ethics', 'Political and Social Philosophy'],
+                summativeType: ''
+            },
+            CHY4U: {
+                simpleName: 'History',
+                sections: ['Renaissance', 'Age of Exploration', 'Age of Enlightenment', 'Age of Revolution', 'Consolidation of Nation-States', 'Imperialism and Resistance', 'Age of Total War', 'Cold War and Beyond'],
                 summativeType: ''
             }
         },
