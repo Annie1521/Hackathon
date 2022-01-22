@@ -1,3 +1,7 @@
+#GradeDiv{
+    position: absolute;
+    margin: 200px,auto
+}
 
 #Grade9{
     background-color: #BCE3FA;
