@@ -6,11 +6,10 @@ function showGrades() {
     for (i = 9; i < 13; i++) {
 
         var gradeBtn = document.createElement('button')
-        GradeDiv.appendChild(gradeBtn)
         var gradeTxt = document.createTextNode('Grade ' + i)
         gradeBtn.id = ('Grade' + i)
         gradeBtn.appendChild(gradeTxt)
-        document.body.appendChild(gradeBtn)
+        GradeDiv.appendChild(gradeBtn)
     }//end of loop
     document.getElementById('Grade9').addEventListener('click', function () {
         grade = 9
