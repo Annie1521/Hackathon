@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = 'text' id='input' placeholder='Search Youtube'></input>
+    <button id='enter'>search</button><br>
+    <button id = 'back'><-</button>
+    
+    <h3 id = '0'></h3>
+    <img class = 'img' id = 'img0'>
+    <h3 id = '1'></h3>
+    <img class = 'img' id = 'img1'>
+    <h3 id = '2'></h3>
+    <img class = 'img' id = 'img2'>
+    <h3 id = '3'></h3>
+    <img class = 'img' id = 'img3'>
+    <h3 id = '4'></h3>
+    <img class = 'img' id = 'img4'>
+
+    <iframe id="player" type="text/html" width="640" height="390"
+    frameborder="0"></iframe>
+
+    <h6 id = 'description'></h6>
+
+    <h4 id ='com0'></h4>
+    <h4 id ='com1'></h4>
+    <h4 id ='com2'></h4>
+    <h4 id ='com3'></h4>
+    <h4 id ='com4'></h4>
+    
+<script>
+
+
+    var enter = document.getElementById('enter')
+
+    enter.addEventListener('click', function(){
+        search()
+    })
+
+
+
+function search(){
+        
+        var base = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCGis1a76ZOCV6zRl6SEmTVpt7AzfF0Z8Y&type=video&q='
+        var inputBox =document.getElementById('input')
+        var value = inputBox.value
+
+fetch(base + value).then(function(data){
+
+return data.json()
+}).then(function(result){
+var raw = result
+
+
+for (i=0; i<4; i++){
+
+    var video = raw.items[i]
+    var name = video.snippet.title
+    var disc = video.snippet.discription 
+    var chanName = video.snippet.channelTitle
+    var thumbnail = video.snippet.thumbnails.default.url
+    var id = video.id.videoId
+
+   var Title = document.getElementById(i)
+   Title.innerHTML = name;
+
+   var Img = document.getElementById('img'+i)
+    Img.src = thumbnail
+
+
+}
+
+
+function comments(id){
+fetch('https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=AIzaSyCGis1a76ZOCV6zRl6SEmTVpt7AzfF0Z8Y&maxResults=5&videoId='+id)
+.then(function(data){
+return data.json()
+}).then(function(result){
+var com = result
+console.log (com)
+
+for (l=0; l<4; l++){
+var comment = com.items[l].snippet.topLevelComment.snippet.textDisplay
+var auther = com.items[l].snippet.topLevelComment.snippet.authorDisplayName
+console.log(comment)
+console.log(auther)
+}
+
+
+
+})
+}
+
+
+function back(){
+    document.getElementById('back').addEventListener('click', function(){
+    document.getElementById('player').src = ('')
+    search()
+    })
+}
+
+function clear(){
+    for(j=0; j<4; j++){
+        var Title = document.getElementById(j)
+        Title.innerHTML = '';
+
+        var descrip = document.getElementById('description')
+        descrip.innerHTML = '';
+
+   var Img = document.getElementById('img'+j)
+    Img.src = ''
+    }
+}
+
+document.getElementById('img0').addEventListener('click', function(){
+var srcId = raw.items[0].id.videoId
+clear()
+comments(srcId)
+document.getElementById('player').src = ('http://www.youtube.com/embed/' + srcId)
+document.getElementById('description').innerHTML = raw.items[0].snippet.description
+})
+
+document.getElementById('img1').addEventListener('click', function(){
+    var srcId = raw.items[1].id.videoId 
+    clear()
+    document.getElementById('player').src = ('http://www.youtube.com/embed/' + srcId)
+    document.getElementById('description').innerHTML = raw.items[1].snippet.description 
+    back()
+
+})
+
+document.getElementById('img2').addEventListener('click', function(){
+    var srcId = raw.items[2].id.videoId  
+    clear()
+    document.getElementById('player').src = ('http://www.youtube.com/embed/' + srcId)
+    document.getElementById('description').innerHTML = raw.items[2].snippet.description
+    back()
+})
+
+document.getElementById('img3').addEventListener('click', function(){
+    var srcId = raw.items[3].id.videoId 
+    clear()
+    document.getElementById('player').src = ('http://www.youtube.com/embed/' + srcId)
+    document.getElementById('description').innerHTML = raw.items[3].snippet.description
+    back()
+})
+
+document.getElementById('img4').addEventListener('click', function(){
+    var srcId = raw.items[4].id.videoId  
+    clear()
+    document.getElementById('player').src = ('http://www.youtube.com/embed/' + srcId)
+    document.getElementById('description').innerHTML = raw.items[4].snippet.description
+    back()
+})
+
+
+})
+    
+
+}
+
+
+
+</script>
+
+</body>
+</html>
