@@ -71,7 +71,7 @@ courseInfoObj = {
             },
             AMS4U: {
                 simpleName: 'Music',
-                sections: ['Knowledge of String Intrument', 'Ability to Play String Instrument'],
+                sections: ['Knowledge of String Intrument', 'Ability to Play String Instrument', 'Composing Music'],
                 summativeType: ''
             },
             AWQ4M: {
