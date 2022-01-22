@@ -1,0 +1,361 @@
+<!-- 
+    to do: 
+        bonus comment section??
+        bonus pause and play buttons??
+        LINK TO API DATA: https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=dogs&key=AIzaSyAxSfa3r6UASA6pghoMzsW7T8qMg5CkZOQ
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube API</title>
+</head>
+
+<body>
+    <div class="container">
+        <section id="video">
+            <div id="div1">
+                <iframe id="iframe" width="560" height="315" frameborder="0" src="" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+                    <p id="paraTitleTest"> </p>
+            </div>
+            <div id="div2">
+                <iframe id="iframe1" width="560" height="315" frameborder="0" src="" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="div3">
+                <iframe id="iframe2" width="560" height="315" frameborder="0" src="" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="div4">
+                <iframe id="iframe3" width="560" height="315" frameborder="0" src="" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+            <div id="div5">
+                <iframe id="iframe4" width="560" height="315" frameborder="0" src="" allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <header>
+            <img src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg" alt="" class="logo">
+        </header>
+
+        <section id="SearchBar">
+            <input type='search' class="search" id=search placeholder="Search Youtube">
+            <button type="submit" class="submit" id="btn" onclick=SearchYoutube()>Enter</button>
+        </section>
+    </div>
+    
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        .container {
+            width: 560px;
+            background-color: #fff;
+            margin: 0 auto;
+            height: 1850px
+        }
+
+        header,
+        #SearchBar,
+        #SubmitBar {
+            position: fixed;
+            text-align: center;
+            width: 560px;
+            background-color: #fff;
+            top: 0px;
+        }
+
+        .logo {
+            width: 170px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search {
+            width: 120px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        #SearchBar {
+            top: 100px;
+        }
+
+        #search {
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+        }
+
+        #btn {
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        #video {
+            position: relative;
+            text-align: left;
+            top: 150px;
+        }
+
+        #iframe {
+            position: initial;
+            text-align: left;
+            width: 280px;
+            height: 170px;
+            margin-left: 20px;
+        }
+
+        #iframe1 {
+            position: initial;
+            text-align: left;
+            width: 280px;
+            height: 170px;
+            margin-left: 20px;
+        }
+
+        #iframe2 {
+            position: initial;
+            text-align: left;
+            width: 280px;
+            height: 170px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #iframe3 {
+            position: initial;
+            text-align: left;
+            width: 280px;
+            height: 170px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #iframe4 {
+            position: initial;
+            text-align: left;
+            width: 280px;
+            height: 170px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #paraTitle1,
+        #paraTitle2,
+        #paraTitle3,
+        #paraTitle4,
+        #paraTitle5,
+        #paraDate1,
+        #paraDate2,
+        #paraDate3,
+        #paraDate4,
+        #paraDate5,
+        #paraDate1,
+        #paraDate2,
+        #paraDate3,
+        #paraDate4,
+        #paraDate5 {
+            margin-left: 50px;
+        }
+
+        #paraChannel1,
+        #paraChannel2,
+        #paraChannel3,
+        #paraChannel4,
+        #paraChannel5 {
+            margin-left:50px;
+            margin-bottom: 50px;
+        }
+
+        #paraChannel5 {
+            margin-bottom: 300px;
+        }
+    </style>
+
+    <script>
+        function makeText(words, element) {
+            var text = document.createTextNode(words);
+            element.appendChild(text)
+        }
+
+        function SearchYoutube() {
+            document.body.scrollTop = document.documentElement.scrollTop =0;
+
+            var searchTerms = search.value
+
+            if (searchTerms == "") {
+                alert("Please Enter Valid Input")
+            } else {
+                var searchTerms = search.value
+                const YOUTUBE_API_KEY = "AIzaSyAxSfa3r6UASA6pghoMzsW7T8qMg5CkZOQ"
+                const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${searchTerms}&key=${YOUTUBE_API_KEY}`;
+                fetch(url)
+                    .then(function (data) {
+                        return data.json()
+                    }).then(function (result) {
+
+                        var FirstVideoId = result.items[0].id.videoId
+                        var FirstVideoTitle = result.items[0].snippet.title
+                        var FirstVideoDateArr = result.items[0].snippet.publishedAt.split("")
+                        FirstVideoDateArray = FirstVideoDateArr.slice(0, 10)
+                        var FirstVideoDate = FirstVideoDateArray.join("")
+                        var FirstChannelName = result.items[0].snippet.channelTitle
+                        console.log(result.items[0].snippet.channelTitle)
+                        src = `https://www.youtube.com/embed/${FirstVideoId}`
+                        document.getElementById("iframe").src = src;
+                        var paraTitle1 = document.createElement("p");
+                        paraTitle1.id = "paraTitle1";
+                        document.getElementById("div1").appendChild(paraTitle1)
+                        makeText("Title: " + FirstVideoTitle, paraTitle1)
+                        var paraDate1 = document.createElement("p");
+                        paraDate1.id = "paraDate1";
+                        document.getElementById("div1").appendChild(paraDate1)
+                        makeText("Date: " + FirstVideoDate, paraDate1)
+                        var paraChannel1 = document.createElement("p");
+                        paraChannel1.id = "paraChannel1";
+                        document.getElementById("div1").appendChild(paraChannel1)
+                        makeText("Channel: " + FirstChannelName, paraChannel1)
+                        var playButton1 = document.createElement("button");
+                        playButton1.id="playButton1";
+                        document.getElementById("div1").appendChild(playButton1)
+                        makeText("Play", playButton1)
+                        //document.getElementById("playButton1").addEventListener('click',function(){
+                        //    video.playVideo()
+                        //})
+
+
+                        var SecondVideoId = result.items[1].id.videoId
+                        var SecondVideoTitle = result.items[1].snippet.title
+                        var SecondVideoDateArr = result.items[1].snippet.publishedAt.split("")
+                        SecondVideoDateArray = SecondVideoDateArr.slice(0, 10)
+                        var SecondVideoDate = SecondVideoDateArray.join("")
+                        var SecondChannelName = result.items[1].snippet.channelTitle
+                        src1 = `https://www.youtube.com/embed/${SecondVideoId}`
+                        document.getElementById("iframe1").src = src1;
+                        var paraTitle2 = document.createElement("p");
+                        paraTitle2.id = "paraTitle2";
+                        document.getElementById("div2").appendChild(paraTitle2)
+                        makeText("Title: " + SecondVideoTitle, paraTitle2)
+                        var paraDate2 = document.createElement("p");
+                        paraDate2.id = "paraDate2";
+                        document.getElementById("div2").appendChild(paraDate2)
+                        makeText("Date: " + SecondVideoDate, paraDate2)
+                        var paraChannel2 = document.createElement("p");
+                        paraChannel2.id = "paraChannel2";
+                        document.getElementById("div2").appendChild(paraChannel2)
+                        makeText("Channel: " + SecondChannelName, paraChannel2)
+
+                        var ThirdVideoId = result.items[2].id.videoId
+                        var ThirdVideoTitle = result.items[2].snippet.title
+                        var ThirdVideoDateArr = result.items[2].snippet.publishedAt.split("")
+                        ThirdVideoDateArray = ThirdVideoDateArr.slice(0, 10)
+                        var ThirdVideoDate = ThirdVideoDateArray.join("")
+                        var ThirdChannelName = result.items[2].snippet.channelTitle
+                        src2 = `https://www.youtube.com/embed/${ThirdVideoId}`
+                        document.getElementById("iframe2").src = src2;
+                        var paraTitle3 = document.createElement("p");
+                        paraTitle3.id = "paraTitle3";
+                        document.getElementById("div3").appendChild(paraTitle3)
+                        makeText("Title: " + ThirdVideoTitle, paraTitle3)
+                        var paraDate3 = document.createElement("p");
+                        paraDate3.id = "paraDate3";
+                        document.getElementById("div3").appendChild(paraDate3)
+                        makeText("Date: " + ThirdVideoDate, paraDate3)
+                        var paraChannel3 = document.createElement("p");
+                        paraChannel3.id = "paraChannel3";
+                        document.getElementById("div3").appendChild(paraChannel3)
+                        makeText("Channel: " + ThirdChannelName, paraChannel3)
+
+                        var FourthVideoId = result.items[3].id.videoId
+                        var FourthVideoTitle = result.items[3].snippet.title
+                        var FourthVideoDateArr = result.items[3].snippet.publishedAt.split("")
+                        FourthVideoDateArray = FourthVideoDateArr.slice(0, 10)
+                        var FourthVideoDate = FourthVideoDateArray.join("")
+                        var FourthChannelName = result.items[3].snippet.channelTitle
+                        src3 = `https://www.youtube.com/embed/${FourthVideoId}`
+                        document.getElementById("iframe3").src = src3;
+                        var paraTitle4 = document.createElement("p");
+                        paraTitle4.id = "paraTitle4";
+                        document.getElementById("div4").appendChild(paraTitle4)
+                        makeText("Title: " + FourthVideoTitle, paraTitle4)
+                        var paraDate4 = document.createElement("p");
+                        paraDate4.id = "paraDate4";
+                        document.getElementById("div4").appendChild(paraDate4)
+                        makeText("Date: " + FourthVideoDate, paraDate4)
+                        var paraChannel4 = document.createElement("p");
+                        paraChannel4.id = "paraChannel4";
+                        document.getElementById("div4").appendChild(paraChannel4)
+                        makeText("Channel: " + FourthChannelName, paraChannel4)
+
+                        var FifthVideoId = result.items[4].id.videoId
+                        var FifthVideoTitle = result.items[4].snippet.title
+                        var FifthVideoDateArr = result.items[4].snippet.publishedAt.split("")
+                        FifthVideoDateArray = FifthVideoDateArr.slice(0, 10)
+                        var FifthVideoDate = FifthVideoDateArray.join("")
+                        var FifthChannelName = result.items[4].snippet.channelTitle
+                        src4 = `https://www.youtube.com/embed/${FifthVideoId}`
+                        document.getElementById("iframe4").src = src4;
+                        var paraTitle5 = document.createElement("p");
+                        paraTitle5.id = "paraTitle5";
+                        document.getElementById("div5").appendChild(paraTitle5)
+                        makeText("Title: " + FifthVideoTitle, paraTitle5)
+                        var paraDate5 = document.createElement("p");
+                        paraDate5.id = "paraDate5";
+                        document.getElementById("div5").appendChild(paraDate5)
+                        makeText("Date: " + FifthVideoDate, paraDate5)
+                        var paraChannel5 = document.createElement("p");
+                        paraChannel5.id = "paraChannel5";
+                        document.getElementById("div5").appendChild(paraChannel5)
+                        makeText("Channel: " + FifthChannelName, paraChannel5)
+                    });
+            }
+
+
+            document.getElementById("btn").addEventListener('click', function(){
+                var element1 = document.getElementById("paraTitle1");
+                element1.parentNode.removeChild(element1);
+                var element2 = document.getElementById("paraDate1");
+                element2.parentNode.removeChild(element2);
+                var element3 = document.getElementById("paraTitle2");
+                element3.parentNode.removeChild(element3);
+                var element4 = document.getElementById("paraDate2");
+                element4.parentNode.removeChild(element4);
+                var element5 = document.getElementById("paraTitle3");
+                element5.parentNode.removeChild(element5);
+                var element6 = document.getElementById("paraDate3");
+                element6.parentNode.removeChild(element6);
+                var element7 = document.getElementById("paraTitle4");
+                element7.parentNode.removeChild(element7);
+                var element8 = document.getElementById("paraDate4");
+                element8.parentNode.removeChild(element8);    
+                var element9 = document.getElementById("paraTitle5");
+                element9.parentNode.removeChild(element9);
+                var element10 = document.getElementById("paraDate5");
+                element10.parentNode.removeChild(element10);
+                var element11 = document.getElementById("paraChannel1");
+                element11.parentNode.removeChild(element11);
+                var element12 = document.getElementById("paraChannel2");
+                element12.parentNode.removeChild(element12);
+                var element13 = document.getElementById("paraChannel3");
+                element13.parentNode.removeChild(element13);
+                var element14 = document.getElementById("paraChannel4");
+                element14.parentNode.removeChild(element14);
+                var element15 = document.getElementById("paraChannel5");
+                element15.parentNode.removeChild(element15)
+            })
+        }
+    </script>
+</body>
+
+</html>
