@@ -1,4 +1,12 @@
 function showGrades() {
+    var TitleDiv = document.createElement("div");
+    TitleDiv.id = "TitleDiv";
+    document.body.appendChild(TitleDiv)
+    var title = document.createElement("header");
+    title.id = "title"
+    var titleTxt = document.createTextNode("Website Name")
+    title.appendChild(titleTxt)
+    TitleDiv.appendChild(title)
     var GradeDiv = document.createElement("div")
     GradeDiv.id = "GradeDiv";
     document.body.appendChild(GradeDiv);
@@ -34,22 +42,22 @@ showGrades()
 
 function showTopics() {
 
-var backTogrades = document.createElement('button')
-var backTogradesTxt = document.createTextNode('Back To Grades')
-backTogrades.id  = 'backToGrades'//ID
-backTogrades.appendChild(backTogradesTxt)
-document.body.appendChild(backTogrades)
+    var backTogrades = document.createElement('button')
+    var backTogradesTxt = document.createTextNode('Back To Grades')
+    backTogrades.id = 'backToGrades'//ID
+    backTogrades.appendChild(backTogradesTxt)
+    document.body.appendChild(backTogrades)
 
 
-var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies'] 
+    var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies']
 
-for (j=0; j<4; j++){
-var topicButton = document.createElement('button')
-var topicButtonTxt = document.createTextNode(topics[j])
-topicButton.id = 'topicButton'//ID
-topicButton.appendChild(topicButtonTxt)
-document.body.appendChild(topicButton)
-}//end of loop
+    for (j = 0; j < 4; j++) {
+        var topicButton = document.createElement('button')
+        var topicButtonTxt = document.createTextNode(topics[j])
+        topicButton.id = 'topicButton'//ID
+        topicButton.appendChild(topicButtonTxt)
+        document.body.appendChild(topicButton)
+    }//end of loop
 
 }//end of showTopics
 
