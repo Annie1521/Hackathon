@@ -593,7 +593,7 @@ function showVideos() {
     ResBtn.appendChild(ResBtnTxt)
     ResDiv.appendChild(ResBtn)
 
-    alert(course)
+    //alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
