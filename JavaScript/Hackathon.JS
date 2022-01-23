@@ -69,6 +69,7 @@ function showTopics() {
     var backTogradesTxt = document.createTextNode('Back')
     backTogrades.id = 'backToGrades'//ID
     backTogrades.appendChild(backTogradesTxt)
+    document.body.appendChild(backTogrades)
     backDiv.appendChild(backTogrades)
     var TitleDiv1 = document.createElement("div");
     TitleDiv1.id = "TitleDiv1";
@@ -148,6 +149,19 @@ function showClasses() {
     var titleTxt2 = document.createTextNode(topic)
     title2.appendChild(titleTxt2)
     TitleDiv2.appendChild(title2)
+
+    backToTopics.addEventListener('click', function () {
+        hideClasses()
+        //showTopics()
+    })
+
+    function hideGrades() {
+        document.body.removeChild(Grade9)
+        document.body.removeChild(Grade10)
+        document.body.removeChild(Grade11)
+        document.body.removeChild(Grade12)
+        document.body.removeChild(TitleDiv)
+    }
 
     var classesDiv = document.createElement("div");
     classesDiv.id = "classesDiv";
@@ -236,7 +250,7 @@ function showClasses() {
     }
 }//end of showClasses
 
-function showUnits(){
+function showUnits() {
     var backDiv3 = document.createElement("div3");
     backDiv3.id = "backDiv3";
     document.body.appendChild(backDiv3);
@@ -253,7 +267,7 @@ function showUnits(){
 
     var title3 = document.createElement("header");
     title3.id = "title3"
-    var titleTxt3 = document.createTextNode("Grade 12 " +courseInfoObj.grade12[nospace][course].simpleName +" ("+ course+")")
+    var titleTxt3 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + " (" + course + ")")
     title3.appendChild(titleTxt3)
     TitleDiv3.appendChild(title3)
 
