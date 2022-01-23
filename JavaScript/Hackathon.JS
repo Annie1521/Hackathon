@@ -65,7 +65,7 @@ function showTopics() {
     backDiv.id = "backDiv";
     document.body.appendChild(backDiv);
     var backTogrades = document.createElement('button')
-    var backTogradesTxt = document.createTextNode('Back To Grades')
+    var backTogradesTxt = document.createTextNode('Back')
     backTogrades.id = 'backToGrades'//ID
     backTogrades.appendChild(backTogradesTxt)
     backDiv.appendChild(backTogrades)
@@ -94,7 +94,7 @@ var topicButton = document.createElement('button')
 var topicButtonTxt = document.createTextNode(topics[j])
 topicButton.id = ('topicButton'+ j)//ID
 topicButton.appendChild(topicButtonTxt)
-document.body.appendChild(topicButton)
+subjectDiv.appendChild(topicButton)
 }//end of loop
 
 document.getElementById('topicButton0').addEventListener('click', function(){
