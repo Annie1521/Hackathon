@@ -4,7 +4,7 @@ document.getElementById('player0').style.display = 'block'
 document.getElementById('player1').style.display = 'block'
 document.getElementById('player2').style.display = 'block'
 
-var base = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyCGis1a76ZOCV6zRl6SEmTVpt7AzfF0Z8Y&type=video&q='
+var base = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyAxSfa3r6UASA6pghoMzsW7T8qMg5CkZOQ&type=video&q='
 var vidtopic1 = 'grade-' + grade
 var vidTopic2 = unit.replace(' ', '-')
 var vidtopic3 = vidtopic1 +'-' + vidTopic2
