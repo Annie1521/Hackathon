@@ -66,12 +66,10 @@ function showTopics() {
     backTogrades.appendChild(backTogradesTxt)
     document.body.appendChild(backTogrades)
 
-
     backTogrades.addEventListener('click', function () {
         hideTopics()
         showGrades()
     })
-
 var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies'] 
 
 for (j=0; j<5; j++){
@@ -125,7 +123,34 @@ function hideGrades() {
 }
 
 
-function showClasses(){
+function showClasses(){  
+obj = courseInfoObj
+if (grade==9){
+    info = obj.grade9
+}else if (grade==10){
+    info = obj.grade10
+}else if(grade==11){
+    info = obj.grade11
+}else if (grade = 12){
+    info = obj.grade12
+}
+
+
+if(topic=='English'){
+var snippet = info.English
+}else if(topic=='STEM'){
+var snippet = info.STEM 
+}else if(topic=='Art'){
+var snippet = info.Arts
+}else if(topic=='Languages'){
+var snippet = info.Languages
+}else if(topic=='Socal Studies'){
+var snippet = info.SocialStudies
+}
+
+classNum = (Object.keys(snippet).length)
+
+
 
 
 }
