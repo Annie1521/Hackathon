@@ -1,11 +1,12 @@
-
-var course = ""
-var topic = ""
-var nospace = ""
-var unit = ""
+var course = "" //example: ENG4U
+var topic = "" //example: Social Studies
+var nospace = "" //example: SocialStudies
+var unit = "" //example: Poetry
+var UnitNoSpace = "" //example: IntrotoENG4U
 ///ONLOAD FUNCTION
 showGrades()
 
+//vvvv=======SHOW GRADES======vvvvvv
 function showGrades() {
 
     var TitleDiv = document.createElement("div");
@@ -132,7 +133,6 @@ function hideTopics() {
 }
 
 //vvvv=======SHOW CLASSES======vvvvvv
-
 function showClasses() {
     var backDiv2 = document.createElement("div");
     backDiv2.id = "backDiv2";
@@ -254,7 +254,6 @@ function showClasses() {
 }//end of showClasses
 
 //vvvv=======SHOW UNITS======vvvvvv
-
 function showUnits() {
     var backDiv3 = document.createElement("div3");
     backDiv3.id = "backDiv3";
@@ -480,6 +479,7 @@ function showUnits() {
         console.log(button1)
         num1 = button1.slice(-1)
         unit = Object.values(courseInfoObj.grade12[nospace][course]['sections'])[num1];
+        UnitNoSpace = unit.replace(/\s/g, ''); //removes the spaces from the unit names
         hideUnits()
         showVideos()
     })
@@ -492,7 +492,6 @@ function hideUnits() {
 }
 
 //vvvv=======SHOW RESOURCES======vvvvvv
-
 function showVideos() {
     var backDiv4 = document.createElement("div4");
     backDiv4.id = "backDiv4";
@@ -514,6 +513,13 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
+
+
+
+
+
+
+
     backToUnits.addEventListener('click', function () {
         hideVideos()
         showUnits()
@@ -526,4 +532,4 @@ function hideVideos() {
     //document.body.removeChild(unitDiv)
 }
 
-//button text becomes search word
+//button text becomes search criteria for youtube API
