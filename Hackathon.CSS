@@ -1043,3 +1043,14 @@ body{
     font-family: PT sans;
     font-size: 2vw;  
 }
+#LanguagesUn1ButtonTxt110,#LanguagesUn1ButtonTxt111,#LanguagesUn1ButtonTxt112,#LanguagesUn1ButtonTxt113,#LanguagesUn1ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
