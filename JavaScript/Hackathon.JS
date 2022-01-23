@@ -300,6 +300,6 @@ function hideUnits(){
     document.body.removeChild(TitleDiv3)
     document.body.removeChild(backDiv3)
     showClasses()
-
+//===REMOVE UNIT BUTTONS HERE======
 
 }
