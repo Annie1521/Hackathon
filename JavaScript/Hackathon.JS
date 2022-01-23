@@ -560,9 +560,13 @@ function hideUnits() {
 
 //vvvv=======SHOW RESOURCES======vvvvvv
 function showVideos() {
+    var TitleDiv4 = document.createElement("div");
+    TitleDiv4.id = "TitleDiv4";
+    document.body.prepend(TitleDiv4)
+
     var backDiv4 = document.createElement("div4");
     backDiv4.id = "backDiv4";
-    document.body.appendChild(backDiv4);
+    document.body.prepend(backDiv4);
 
     var backToUnits = document.createElement('button')
     var backToUnitsTxt = document.createTextNode('Back')
