@@ -611,7 +611,14 @@ document.getElementById('player2').style.display = 'none'
 document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player1').src = ''
+    
+document.getElementById('player0').src = ''
+document.getElementById('player1').src = ''
 document.getElementById('player2').src = ''
+
+document.getElementById('player0').style.diplay = 'none'
+document.getElementById('player1').style.diplay = 'none'
+document.getElementById('player2').style.diplay = 'none'
     //document.body.removeChild(unitDiv)
 }
 
