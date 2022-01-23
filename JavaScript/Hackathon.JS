@@ -583,7 +583,7 @@ function showVideos() {
     showVideoAPI()
 
 
-    alert(course)
+    //alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
