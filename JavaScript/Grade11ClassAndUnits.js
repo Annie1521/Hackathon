@@ -292,20 +292,20 @@ function showUnitsEleven() {
         }//end of loop
     }
     if (course == "HSP3U" && grade == "11") {
-        var HSP3Uunits = Object.values(courseInfoObj.grade12.SocialStudies.HSP3U.sections)
+        var HSP3Uunits = Object.values(courseInfoObj.grade11.SocialStudies.HSP3U.sections)
         for (un5 = 0; un5 < HSP3Uunits.length; un5++) {
             var SocialStudiesUn1Button11 = document.createElement('button')
             var SocialStudiesUn1ButtonTxt11 = document.createTextNode(HSP3Uunits[un5])
-            SocialStudiesUn1Button11.id = ('SocialStudiesUn1ButtonTxt' + un5)//ID
+            SocialStudiesUn1Button11.id = ('SocialStudiesUn1ButtonTxt11' + un5)//ID
             SocialStudiesUn1Button11.appendChild(SocialStudiesUn1ButtonTxt11)
             unitDiv11.appendChild(SocialStudiesUn1Button11)
         }//end of loop
     }
-    if (course == "HZB3M" && grade == "11") {
-        var HZB3Munits = Object.values(courseInfoObj.grade12.SocialStudies.HZB3M.sections)
-        for (un51 = 0; un51 < HZB3Munits.length; un51++) {
+    if (course == "HZB3U" && grade == "11") {
+        var HZB3Uunits = Object.values(courseInfoObj.grade11.SocialStudies.HZB3U.sections)
+        for (un51 = 0; un51 < HZB3Uunits.length; un51++) {
             var SocialStudiesUn2Button11 = document.createElement('button')
-            var SocialStudiesUn2ButtonTxt11 = document.createTextNode(HZB3Munits[un51])
+            var SocialStudiesUn2ButtonTxt11 = document.createTextNode(HZB3Uunits[un51])
             SocialStudiesUn2Button11.id = ('SocialStudiesUn2ButtonTxt11' + un51)//ID
             SocialStudiesUn2Button11.appendChild(SocialStudiesUn2ButtonTxt11)
             unitDiv11.appendChild(SocialStudiesUn2Button11)
@@ -315,7 +315,7 @@ function showUnitsEleven() {
         button1 = f.target.id
         console.log(button1)
         num1 = button1.slice(-1)
-        unit = Object.values(courseInfoObj.grade12[nospace][course]['sections'])[num1];
+        unit = Object.values(courseInfoObj.grade11[nospace][course]['sections'])[num1];
         hideUnitsEleven()
         showVideosEleven()
     })
@@ -324,7 +324,7 @@ function showUnitsEleven() {
 function hideUnitsEleven() {
     document.body.removeChild(TitleDiv3)
     document.body.removeChild(backDiv3)
-    document.body.removeChild(unitDiv)
+    document.body.removeChild(unitDiv11)
 }
 
 //vvvv=======SHOW RESOURCES======vvvvvv
