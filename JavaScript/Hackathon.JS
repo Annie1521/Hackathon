@@ -272,9 +272,7 @@ function showUnits() {
     TitleDiv3.appendChild(title3)
 
     backToClasses.addEventListener('click', function () {
-       hideUnits()
-        //showTopics()
-        
+       hideUnits()  
     })
 
     var unitDiv = document.createElement("div");
