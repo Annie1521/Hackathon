@@ -580,6 +580,9 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
+    showVideoAPI()
+
+
     alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
@@ -598,6 +601,7 @@ function showVideos() {
 function hideVideos() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
+<<<<<<< HEAD
     document.body.removeChild(addResDiv);
     //document.body.removeChild(unitDiv)
 
@@ -607,7 +611,14 @@ document.getElementById('player1').style.display = 'none'
 document.getElementById('player2').style.display = 'none'
 document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
+=======
+    document.getElementById('player1').src = ''
+>>>>>>> f5a64854923f660826a2f952f24e01bb01958096
 document.getElementById('player2').src = ''
+    //document.body.removeChild(unitDiv)
 }
+
+//button text becomes search criteria for youtube API
+
 
 //button text becomes search criteria for youtube API

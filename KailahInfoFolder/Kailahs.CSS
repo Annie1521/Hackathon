@@ -74,7 +74,7 @@ body{
 
 #TitleDiv1{
     width: 99%;
-    margin-top:7%;
+    margin-top:3%;
     margin-left: auto;
     margin-right:auto;
     text-align: center;
@@ -89,17 +89,24 @@ body{
     width: 15%;       
     padding-top: 1%;
     padding-bottom:1%;
-    margin: 4%;
+    margin: 1%;
     border-radius: 15px;
     border: none;
     font-family: PT sans;
     font-size: 3vw;
 }
+#subjectDiv{
+    width: 99%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
 #topicButton0{
     background-color: #BCE3FA;
-    width: 15%;
-    padding-top: 6%;
-    padding-bottom:6%;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
     margin: 4%;
     border-radius: 15px;
     border: none;
@@ -108,9 +115,9 @@ body{
 }
 #topicButton1{
     background-color: #BCE3FA;
-    width: 15%;
-    padding-top: 6%;
-    padding-bottom:6%;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
     margin: 4%;
     border-radius: 15px;
     border: none;
@@ -119,9 +126,9 @@ body{
 }
 #topicButton2{
     background-color: #BCE3FA;
-    width: 15%;
-    padding-top: 6%;
-    padding-bottom:6%;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
     margin: 4%;
     border-radius: 15px;
     border: none;
@@ -130,9 +137,9 @@ body{
 }
 #topicButton3{
     background-color: #BCE3FA;
-    width: 15%;
-    padding-top: 6%;
-    padding-bottom:6%;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
     margin: 4%;
     border-radius: 15px;
     border: none;
@@ -141,12 +148,989 @@ body{
 }
 #topicButton4{
     background-color: #BCE3FA;
-    width: 15%;
-    padding-top: 6%;
-    padding-bottom:6%;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 2%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#TitleDiv2{
+    width: 99%;
+    margin-top:3%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#title2{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+#backToTopics{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#classesDiv{
+    width: 99%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#EnglishButton0, #EnglishButton1, #EnglishButton2, #SocialStudiesButton0, #SocialStudiesButton1, #SocialStudiesButton2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
     margin: 4%;
     border-radius: 15px;
     border: none;
     font-family: PT sans;
     font-size: 3vw;
+}
+#STEMButton0, #STEMButton1, #STEMButton2, #STEMButton3, #STEMButton4, #STEMButton5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#STEMButton6, #STEMButton7{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#ArtButton0, #ArtButton1, #ArtButton2, #ArtButton3{
+    background-color: #BCE3FA;
+    width: 20%;
+    padding-top: 9%;
+    padding-bottom:9%;
+    margin: 2%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#LanguagesButton0, #SocialStudiesButton0, #SocialStudiesButton1, #SocialStudiesButton2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#TitleDiv3{
+    width: 99%;
+    margin-top:3%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#title3{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+#backToClasses{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#unitDiv{
+    width: 99%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+
+#EngUn1ButtonTxt0, #EngUn1ButtonTxt1, #EngUn1ButtonTxt2, #EngUn1ButtonTxt3, #EngUn1ButtonTxt4,#EngUn1ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#EngUn2ButtonTxt0, #EngUn2ButtonTxt4,#EngUn2ButtonTxt5, #EngUn2ButtonTxt2, #EngUn2ButtonTxt3, #EngUn2ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#EngUn2ButtonTxt1{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#EngUn3ButtonTxt0, #EngUn3ButtonTxt1, #EngUn3ButtonTxt2, #EngUn3ButtonTxt3, #EngUn3ButtonTxt4, #EngUn3ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn1ButtonTxt0, #STEMUn1ButtonTxt1, #STEMUn1ButtonTxt2, #STEMUn1ButtonTxt3, #STEMUn1ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn1ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:9%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;   
+}
+#STEMUn2ButtonTxt0, #STEMUn2ButtonTxt1, #STEMUn2ButtonTxt5, #STEMUn2ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn2ButtonTxt2, #STEMUn2ButtonTxt3{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn2ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:6%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw; 
+}
+#STEMUn3ButtonTxt0, #STEMUn3ButtonTxt4, #STEMUn3ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:12%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn3ButtonTxt3, #STEMUn3ButtonTxt1, #STEMUn3ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:9%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn4ButtonTxt5, #STEMUn4ButtonTxt0, #STEMUn4ButtonTxt1, #STEMUn4ButtonTxt2, #STEMUn4ButtonTxt3, #STEMUn4ButtonTxt4, #STEMUn4ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn5ButtonTxt0, #STEMUn5ButtonTxt1, #STEMUn5ButtonTxt5, #STEMUn5ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:12%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn5ButtonTxt2, #STEMUn5ButtonTxt3, #STEMUn5ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:9%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw; 
+}
+#STEMUn6ButtonTxt0, #STEMUn6ButtonTxt1, #STEMUn6ButtonTxt4, #STEMUn6ButtonTxt5, #STEMUn6ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn6ButtonTxt3, #STEMUn6ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn7ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn7ButtonTxt0, #STEMUn7ButtonTxt1, #STEMUn7ButtonTxt3, #STEMUn7ButtonTxt4, #STEMUn7ButtonTxt5,#STEMUn7ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn8ButtonTxt0, #STEMUn8ButtonTxt1, #STEMUn8ButtonTxt3, #STEMUn8ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#STEMUn8ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn1ButtonTxt0, #ArtUn1ButtonTxt2, #ArtUn1ButtonTxt4, #ArtUn1ButtonTxt5, #ArtUn1ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn1ButtonTxt1, #ArtUn1ButtonTxt3{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn2ButtonTxt0, #ArtUn2ButtonTxt1, #ArtUn2ButtonTxt3, #ArtUn2ButtonTxt6{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn2ButtonTxt2, #ArtUn2ButtonTxt4, #ArtUn2ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn3ButtonTxt0, #ArtUn3ButtonTxt3, #ArtUn3ButtonTxt4, #ArtUn3ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn3ButtonTxt1, #ArtUn3ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn4ButtonTxt0, #ArtUn4ButtonTxt1, #ArtUn4ButtonTxt2, #ArtUn4ButtonTxt3, #ArtUn4ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:12%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#ArtUn4ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:7%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#LanguagesUn1ButtonTxt0, #LanguagesUn1ButtonTxt4, #LanguagesUn1ButtonTxt2, #LanguagesUn1ButtonTxt3, #LanguagesUn1ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#LanguagesUn1ButtonTxt1{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn1ButtonTxt0, #SocialStudiesUn1ButtonTxt1, #SocialStudiesUn1ButtonTxt3, #SocialStudiesUn1ButtonTxt4{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn1ButtonTxt2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn2ButtonTxt0, #SocialStudiesUn2ButtonTxt2, #SocialStudiesUn2ButtonTxt3, #SocialStudiesUn2ButtonTxt5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn2ButtonTxt1, #SocialStudiesUn2ButtonTxt4{    
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn3ButtonTxt0, #SocialStudiesUn3ButtonTxt1, #SocialStudiesUn3ButtonTxt2, #SocialStudiesUn3ButtonTxt3, #SocialStudiesUn3ButtonTxt4, #SocialStudiesUn3ButtonTxt7, #SocialStudiesUn3ButtonTxt8, #SocialStudiesUn3ButtonTxt9{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+#SocialStudiesUn3ButtonTxt5, #SocialStudiesUn3ButtonTxt6{    
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    margin: 5%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size:  2vw;
+}
+
+#TitleDiv4{
+    width: 99%;
+    margin-top:3%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#title4{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+#backToUnits{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#classesDiv11{
+    width: 99%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#EnglishButton110{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#STEMButton110, #STEMButton111, #STEMButton112, #STEMButton113, #STEMButton114, #STEMButton115, #STEMButton116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin: 4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#ArtButton110, #ArtButton111, #ArtButton112, #ArtButton113{
+    background-color: #BCE3FA;
+    width: 20%;
+    padding-top: 9%;
+    padding-bottom:9%;
+    border-radius: 15px;
+    margin: 2%;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#LanguagesButton110, #LanguagesButton111{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin: 4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#SocialStudiesButton110, #SocialStudiesButton111{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin: 4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#unitDiv11{
+    width: 99%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#EngUn1ButtonTxt110,#EngUn1ButtonTxt111,#EngUn1ButtonTxt112,#EngUn1ButtonTxt113,#EngUn1ButtonTxt114,#EngUn1ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#STEMUn1ButtonTxt110,#STEMUn1ButtonTxt111,#STEMUn1ButtonTxt112 ,#STEMUn1ButtonTxt113,#STEMUn1ButtonTxt114,#STEMUn1ButtonTxt115,#STEMUn1ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn4ButtonTxt110,#STEMUn4ButtonTxt116,#STEMUn4ButtonTxt112 ,#STEMUn4ButtonTxt113{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn4ButtonTxt114,#STEMUn4ButtonTxt115,#STEMUn4ButtonTxt111{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn5ButtonTxt110,#STEMUn5ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn5ButtonTxt111,#STEMUn5ButtonTxt112 ,#STEMUn5ButtonTxt113{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn5ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:7%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn6ButtonTxt110,#STEMUn6ButtonTxt111,#STEMUn6ButtonTxt112 ,#STEMUn6ButtonTxt113,#STEMUn6ButtonTxt114,#STEMUn6ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn6ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn7ButtonTxt110,#STEMUn7ButtonTxt111,#STEMUn7ButtonTxt112 ,#STEMUn7ButtonTxt113,#STEMUn7ButtonTxt114,#STEMUn7ButtonTxt115,#STEMUn7ButtonTxt116,#STEMUn7ButtonTxt117{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn8ButtonTxt111,#STEMUn8ButtonTxt112,#STEMUn8ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn8ButtonTxt110, #STEMUn8ButtonTxt113,#STEMUn8ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#STEMUn2ButtonTxt110,#STEMUn2ButtonTxt111,#STEMUn2ButtonTxt112 ,#STEMUn2ButtonTxt113,#STEMUn2ButtonTxt114,#STEMUn2ButtonTxt115,#STEMUn2ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw; 
+}
+#ArtUn1ButtonTxt110,#ArtUn1ButtonTxt111,#ArtUn1ButtonTxt112,#ArtUn1ButtonTxt116,#ArtUn1ButtonTxt114,#ArtUn1ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#ArtUn1ButtonTxt113{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;  
+}
+#ArtUn2ButtonTxt110,#ArtUn2ButtonTxt111, #ArtUn2ButtonTxt115, #ArtUn2ButtonTxt113,#ArtUn2ButtonTxt116,#ArtUn2ButtonTxt114,#ArtUn2ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#ArtUn2ButtonTxt112{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:08%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;  
+}
+#ArtUn3ButtonTxt110,#ArtUn3ButtonTxt113,#ArtUn3ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#ArtUn3ButtonTxt111, #ArtUn3ButtonTxt112{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:08%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;  
+}
+#ArtUn4ButtonTxt110,#ArtUn4ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#ArtUn4ButtonTxt111, #ArtUn4ButtonTxt113, #ArtUn4ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:08%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;  
+}
+#ArtUn4ButtonTxt112, #ArtUn4ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:06%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;  
+}
+
+#LanguagesUn1ButtonTxt110,#LanguagesUn1ButtonTxt111,#LanguagesUn1ButtonTxt112,#LanguagesUn1ButtonTxt113,#LanguagesUn1ButtonTxt114,#LanguagesUn1ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#LanguagesUn3ButtonTxt110,#LanguagesUn3ButtonTxt111,#LanguagesUn3ButtonTxt112,#LanguagesUn3ButtonTxt113,#LanguagesUn3ButtonTxt114,#LanguagesUn3ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#SocialStudiesUn1ButtonTxt110,#SocialStudiesUn1ButtonTxt111,#SocialStudiesUn1ButtonTxt112,#SocialStudiesUn1ButtonTxt113,#SocialStudiesUn1ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#SocialStudiesUn2ButtonTxt110,#SocialStudiesUn2ButtonTxt111,#SocialStudiesUn2ButtonTxt112,#SocialStudiesUn2ButtonTxt113,#SocialStudiesUn2ButtonTxt114,#SocialStudiesUn2ButtonTxt115,#SocialStudiesUn2ButtonTxt117{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:11%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+
+#SocialStudiesUn2ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+
+.newResourceClass{
+    font-family: PT sans;
+}
+
+.namePClass{
+    font-weight: bold;
+}
+
+.linkPClass{
+    text-decoration: underline;
+}
+
+.commentPClass{
+    border-style: solid;
+}
+
+.replyBClass{
+    font-family: PT sans;
+}
+
+.replyDivClass{
+    margin-left: 50px;
+}
+
+.repNamePClass{
+    margin-left:50px;
+    font-weight: bold;
+}
+
+.repCommentPClass{
+    margin-left:50px;
+    border-style:solid;
 }

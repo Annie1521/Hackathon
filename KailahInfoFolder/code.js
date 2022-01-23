@@ -1,3 +1,7 @@
+document.getElementById('player0').style.display = 'none'
+document.getElementById('player1').style.display = 'none'
+document.getElementById('player2').style.display = 'none'
+
 var course = "" //example: ENG4U
 var topic = "" //example: Social Studies
 var nospace = "" //example: SocialStudies
@@ -6,7 +10,38 @@ var UnitNoSpace = "" //example: IntrotoENG4U
 ///ONLOAD FUNCTION
 showGrades()
 
-//vvvv=======SHOW GRADES======vvvvvv
+var resourceDiv=document.createElement('div')
+resourceDiv.id="resourceDiv"
+document.body.appendChild(resourceDiv)
+//base function use for each course
+function CourseName(description,Rlink){
+
+    var nameDiv=document.createElement('div')
+    nameDiv.id='nameDiv'
+    resourceDiv.appendChild(nameDiv)
+
+    var a=document.createElement('a')
+    a.id='a'
+    nameDiv.appendChild(a)
+
+    var link=document.createTextNode(description)
+    a.appendChild(link)
+    a.href = Rlink; 
+
+    
+
+}
+var ENG4U= {
+    IntrotoENG4U:['How to read academic writing','https://libguides.usc.edu/evaluate/scholarlyarticles'],
+    LiteraryCriticism: null
+    ,Poetry:['Poetry guide','http://www.teachenglishtoday.org/wp-content/uploads/2018/07/Notes-on-Grade-12-HL-poems-2.pdf'],
+    EssayAnalysis:['Tips for analysis Essays','https://sites.google.com/site/fungeng4u/tips-for-writing-a-literary-analysis-essay '],
+    NovelStudy:['How to read Shakespeare','https://www.bardweb.net/content/ac/shakesreader.html'],
+    ISU:['ISU book ideas','http://iss.scdsb.on.ca/Documents/Library%20Documents/Senior-ISU-Book-ListWEB.pdf '],
+
+
+}
+
 function showGrades() {
 
     var TitleDiv = document.createElement("div");
@@ -153,7 +188,7 @@ function showTopics() {
             showClassesEleven()
         }
     })
-}//end of showTopics
+}
 
 
 function hideTopics() {
@@ -499,6 +534,8 @@ function showUnits() {
         for (un52 = 0; un52 < CHY4Uunits.length; un52++) {
             var SocialStudiesUn3Button = document.createElement('button')
             var SocialStudiesUn3ButtonTxt = document.createTextNode(CHY4Uunits[un52])
+            //annie doing something
+            search(CHY4Uunits[un52])
             SocialStudiesUn3Button.id = ('SocialStudiesUn3ButtonTxt' + un52)//ID
             SocialStudiesUn3Button.appendChild(SocialStudiesUn3ButtonTxt)
             unitDiv.appendChild(SocialStudiesUn3Button)
@@ -543,12 +580,22 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
+    showVideoAPI()
 
+    var ResDiv = document.createElement("div");
+    ResDiv.id = "ResDiv";
+    document.body.appendChild(ResDiv)
 
-    alert(UnitNoSpace)
+    var ResBtn = document.createElement("button")
+    var ResBtnTxt = document.createTextNode("More Resources")
+    ResBtn.id = (UnitNoSpace+"res")//ID
+    ResBtn.className = "showResBtn";
+    ResBtn.appendChild(ResBtnTxt)
+    ResDiv.appendChild(ResBtn)
 
-    CourseName(course.UnitNoSpace[1],course.UnitNoSpace[2])
-
+    //alert(course)
+    //var resource = Object.values([course][UnitNoSpace])
+    //console.log(resource)
 
 
 
@@ -556,7 +603,10 @@ function showVideos() {
         hideVideos()
         showUnits()
     })
+    
+    makeComment();
 }
+
 
 function hideVideos() {
     document.body.removeChild(TitleDiv4)
