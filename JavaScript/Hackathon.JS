@@ -1,4 +1,3 @@
-//----------HELLO????-------
 
 var course = ""
 var nospace = ""
