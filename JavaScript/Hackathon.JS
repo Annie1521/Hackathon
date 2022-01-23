@@ -1,6 +1,8 @@
 
 var course = ""
+var topic = ""
 var nospace = ""
+var unit = ""
 ///ONLOAD FUNCTION
 showGrades()
 
@@ -233,16 +235,15 @@ function showClasses() {
     }
 
 
-    for (total = 0; total < 19; total++) {
-        document.getElementById('classesDiv').addEventListener('click', function (e) {
-            button = e.target.id
-            num = button.slice(-1)
-            nospace = topic.replace(/\s/g, ''); //removes the spaces from 'Social Studies'
-            course = Object.keys(courseInfoObj.grade12[nospace])[num]
-            hideClasses()
-            showUnits()
-        })
-    }
+    document.getElementById('classesDiv').addEventListener('click', function (e) {
+        button = e.target.id
+        num = button.slice(-1)
+        nospace = topic.replace(/\s/g, ''); //removes the spaces from 'Social Studies'
+        course = Object.keys(courseInfoObj.grade12[nospace])[num]
+        hideClasses()
+        showUnits()
+    })
+
 
     function hideClasses() {
         var Child = document.getElementById("classesDiv")
@@ -251,6 +252,8 @@ function showClasses() {
         document.body.removeChild(TitleDiv2)
     }
 }//end of showClasses
+
+//vvvv=======SHOW UNITS======vvvvvv
 
 function showUnits() {
     var backDiv3 = document.createElement("div3");
@@ -274,7 +277,8 @@ function showUnits() {
     TitleDiv3.appendChild(title3)
 
     backToClasses.addEventListener('click', function () {
-       hideUnits()  
+        hideUnits()
+        showClasses()
     })
 
     var unitDiv = document.createElement("div");
@@ -426,7 +430,7 @@ function showUnits() {
         for (un33 = 0; un33 < AWQ4Munits.length; un33++) {
             var ArtUn4Button = document.createElement('button')
             var ArtUn4ButtonTxt = document.createTextNode(AWQ4Munits[un33])
-            ArtUn4Button.id = ('ArtUn1ButtonTxt' + un33)//ID
+            ArtUn4Button.id = ('ArtUn4ButtonTxt' + un33)//ID
             ArtUn4Button.appendChild(ArtUn4ButtonTxt)
             unitDiv.appendChild(ArtUn4Button)
         }//end of loop
@@ -471,15 +475,55 @@ function showUnits() {
             unitDiv.appendChild(SocialStudiesUn3Button)
         }//end of loop
     }
-
-    
+    document.getElementById('unitDiv').addEventListener('click', function (f) {
+        button1 = f.target.id
+        console.log(button1)
+        num1 = button1.slice(-1)
+        unit = Object.values(courseInfoObj.grade12[nospace][course]['sections'])[num1];
+        hideUnits()
+        showVideos()
+    })
 }//end of showUnits
 
-
-function hideUnits(){
+function hideUnits() {
     document.body.removeChild(TitleDiv3)
     document.body.removeChild(backDiv3)
-    showClasses()
-//===REMOVE UNIT BUTTONS HERE======
-
+    document.body.removeChild(unitDiv)
 }
+
+//vvvv=======SHOW RESOURCES======vvvvvv
+
+function showVideos() {
+    var backDiv4 = document.createElement("div4");
+    backDiv4.id = "backDiv4";
+    document.body.appendChild(backDiv4);
+
+    var backToUnits = document.createElement('button')
+    var backToUnitsTxt = document.createTextNode('Back')
+    backToUnits.id = 'backToUnits'//ID
+    backToUnits.appendChild(backToUnitsTxt)
+    backDiv4.appendChild(backToUnits)
+
+    var TitleDiv4 = document.createElement("div");
+    TitleDiv4.id = "TitleDiv4";
+    document.body.appendChild(TitleDiv4)
+
+    var title4 = document.createElement("header");
+    title4.id = "title4"
+    var titleTxt4 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + ": " + unit)
+    title4.appendChild(titleTxt4)
+    TitleDiv4.appendChild(title4)
+
+    backToUnits.addEventListener('click', function () {
+        hideVideos()
+        showUnits()
+    })
+}
+
+function hideVideos() {
+    document.body.removeChild(TitleDiv4)
+    document.body.removeChild(backDiv4)
+    //document.body.removeChild(unitDiv)
+}
+
+//button text becomes search word
