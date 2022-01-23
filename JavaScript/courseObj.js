@@ -81,7 +81,7 @@ courseInfoObj = {
                 summativeType: ''
             }
         },
-        'Social Studies': {
+        SocialStudies: {
             HSB4U: {
                 simpleName: 'Challenge and Change',
                 sections: ['Social Change', 'Social Patterns and Trends', 'Global Social Change'],

@@ -68,6 +68,7 @@ function showTopics() {
     var backTogradesTxt = document.createTextNode('Back')
     backTogrades.id = 'backToGrades'//ID
     backTogrades.appendChild(backTogradesTxt)
+    document.body.appendChild(backTogrades)
     backDiv.appendChild(backTogrades)
     var TitleDiv1 = document.createElement("div");
     TitleDiv1.id = "TitleDiv1";
@@ -152,6 +153,45 @@ function hideTopics() {
         hideClasses()
         //showTopics()
     })
+   
+function hideGrades() {
+    document.body.removeChild(Grade9)
+    document.body.removeChild(Grade10)
+    document.body.removeChild(Grade11)
+    document.body.removeChild(Grade12)
+    document.body.removeChild(TitleDiv)
+}
+
+
+function showClasses(){  
+obj = courseInfoObj
+if (grade==9){
+    info = obj.grade9
+}else if (grade==10){
+    info = obj.grade10
+}else if(grade==11){
+    info = obj.grade11
+}else if (grade = 12){
+    info = obj.grade12
+}
+
+function showClasses(){
+
+if(topic=='English'){
+var snippet = info.English
+}else if(topic=='STEM'){
+var snippet = info.STEM 
+}else if(topic=='Art'){
+var snippet = info.Arts
+}else if(topic=='Languages'){
+var snippet = info.Languages
+}else if(topic=='Socal Studies'){
+var snippet = info.SocialStudies
+}
+
+classNum = (Object.keys(snippet).length)
+
+
 
     var classesDiv = document.createElement("div");
     classesDiv.id = "classesDiv";
@@ -249,4 +289,5 @@ function hideTopics() {
 
 function hideClasses() {
     //remove classes
+}
 }
