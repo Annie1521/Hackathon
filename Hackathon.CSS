@@ -158,3 +158,93 @@ body{
     font-size: 3vw;
 }
 
+#TitleDiv2{
+    width: 99%;
+    margin-top:3%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#title2{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+#backToTopics{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#classesDiv{
+    width: 99%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#EnglishButton0, #EnglishButton1, #EnglishButton2, #SocialStudiesButton0, #SocialStudiesButton1, #SocialStudiesButton2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#STEMButton0, #STEMButton1, #STEMButton2, #STEMButton3, #STEMButton4, #STEMButton5{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#STEMButton6, #STEMButton7{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#ArtButton0, #ArtButton1, #ArtButton2, #ArtButton3{
+    background-color: #BCE3FA;
+    width: 20%;
+    padding-top: 9%;
+    padding-bottom:9%;
+    margin: 2%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#LanguagesButton0, #SocialStudiesButton0, #SocialStudiesButton1, #SocialStudiesButton2{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
