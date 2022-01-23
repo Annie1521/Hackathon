@@ -37,7 +37,6 @@ document.getElementById('Grade11').addEventListener('click', function(){
     showTopics()
 })
 document.getElementById('Grade12').addEventListener('click', function(){
-    
     grade = 12
     showTopics()
 })
@@ -51,8 +50,6 @@ function hideGrades(){
     document.body.removeChild(Grade11)
     document.body.removeChild(Grade12)
 }
-
-
 
 
 //vvvv=======SHOW TOPICS======vvvvvv
@@ -70,7 +67,6 @@ hideTopics()
 showGrades()
 })
 
-
 var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies'] 
 
 for (j=0; j<5; j++){
@@ -80,6 +76,28 @@ topicButton.id = ('topicButton'+ j)//ID
 topicButton.appendChild(topicButtonTxt)
 document.body.appendChild(topicButton)
 }//end of loop
+
+
+document.getElementById('topicButton0').addEventListener('click', function(){
+    topic = 'English'  
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton1').addEventListener('click', function(){
+   topic = 'STEM'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton2').addEventListener('click', function(){
+    topic = 'Art'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton3').addEventListener('click', function(){
+    topic = 'Languages'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton4').addEventListener('click', function(){
+    topic = 'Socal Studies'
+    hideTopics(); showClasses()
+})
 }//end of showTopics
 
 //^^^^^^=======SHOW TOPICS=====^^^^^^
@@ -91,5 +109,10 @@ function hideTopics(){
     document.body.removeChild(topicButton3)
     document.body.removeChild(topicButton4)
     document.body.removeChild(backToGrades)
+
+}
+
+function showClasses(){
+
 
 }
