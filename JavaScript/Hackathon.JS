@@ -48,6 +48,16 @@ document.getElementById('Grade12').addEventListener('click', function(){
 
 }//end of showGrades
 
+
+function hideGrades(){
+    document.body.removeChild(Grade9)
+    document.body.removeChild(Grade10)
+    document.body.removeChild(Grade11)
+    document.body.removeChild(Grade12)
+    document.body.removeChild(TitleDiv)
+}
+
+
 //vvvv=======SHOW TOPICS======vvvvvv
 function showTopics() {
     hideGrades()
@@ -77,16 +87,37 @@ function showTopics() {
     var subjectDiv = document.createElement("div");
     subjectDiv.id = "subjectDiv";
     document.body.appendChild(subjectDiv);
+    
+var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies'] 
 
-    var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies']
+for (j=0; j<5; j++){
+var topicButton = document.createElement('button')
+var topicButtonTxt = document.createTextNode(topics[j])
+topicButton.id = ('topicButton'+ j)//ID
+topicButton.appendChild(topicButtonTxt)
+document.body.appendChild(topicButton)
+}//end of loop
 
-    for (j = 0; j < 5; j++) {
-        var topicButton = document.createElement('button')
-        var topicButtonTxt = document.createTextNode(topics[j])
-        topicButton.id = ('topicButton' + j)//ID
-        topicButton.appendChild(topicButtonTxt)
-        subjectDiv.appendChild(topicButton)
-    }//end of loop
+document.getElementById('topicButton0').addEventListener('click', function(){
+    topic = 'English'  
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton1').addEventListener('click', function(){
+   topic = 'STEM'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton2').addEventListener('click', function(){
+    topic = 'Art'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton3').addEventListener('click', function(){
+    topic = 'Languages'
+    hideTopics(); showClasses()
+})
+document.getElementById('topicButton4').addEventListener('click', function(){
+    topic = 'Socal Studies'
+    hideTopics(); showClasses()
+})
 }//end of showTopics
 
 //^^^^^^=======SHOW TOPICS=====^^^^^^
@@ -96,10 +127,7 @@ function hideTopics() {
     document.body.removeChild(backDiv)
 }
 
-function hideGrades() {
-    document.body.removeChild(Grade9)
-    document.body.removeChild(Grade10)
-    document.body.removeChild(Grade11)
-    document.body.removeChild(Grade12)
-    document.body.removeChild(TitleDiv)
+function showClasses(){
+
+
 }

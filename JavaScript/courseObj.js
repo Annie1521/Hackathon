@@ -17,7 +17,7 @@ courseInfoObj = {
                 summativeType: ''
             }
         },
-        Mathematics: {
+        STEM: {
             MCV4U: {
                 simpleName: 'Calculus',
                 sections: ['Derivatives', 'Vectors', 'Planes', 'Exponential Functions'],
@@ -32,9 +32,7 @@ courseInfoObj = {
                 simpleName: 'Data Management',
                 sections: ['Probability and Counting', 'Probability Distributions', 'Organizing Data for Analysis', 'Statistical Analysis'],
                 summativeType: 'Exam'
-            }
-        },
-        Science: {
+            },
             SBI4U: {
                 simpleName: 'Biology',
                 sections: ['Biochemistry', 'Metabolic Processes', 'Molecular Genetics', 'Homeostasis', 'Population Dynamics'],
@@ -49,7 +47,17 @@ courseInfoObj = {
                 simpleName: 'Physics',
                 sections: ['Dynamics', 'Energy and Momentum', 'Electric, Gravitational and Magnetic Feilds', 'Wave Nature of Light', 'Modern Physics'],
                 summativeType: 'Exam'
-            }
+            },
+            TGJ4M: {
+                simpleName: 'Communications',
+                sections: ['ICT Fundementals', 'Illustrated Print Fundemetials', 'Video Production', 'Blogging', 'Broadcast Jounalism'],
+                summativeType: ''
+            },
+            ICS4U: {
+                simpleName: 'Computer and Information Science',
+                sections: ['Java Programming', 'Arrays and Game Design', 'Software Life Cycle'],
+                summativeType: ''
+            },
         },
         Arts: {
             ADA4M: {
@@ -97,24 +105,5 @@ courseInfoObj = {
                 summativeType: 'Exam'
             }
         },
-        'Health and Physical Education': {
-            PPL4O: {
-                simpleName: 'Health and Physical Education',
-                sections: ['Fitness Plan', 'Confict Type and Resolution', 'Movement', 'Human Devolopment/Sexual Health', 'Fair Play', 'Healthy Eating'],
-                summativeType: ''
-            }
-        },
-        Technology: {
-            TGJ4M: {
-                simpleName: 'Communications',
-                sections: ['ICT Fundementals', 'Illustrated Print Fundemetials', 'Video Production', 'Blogging', 'Broadcast Jounalism'],
-                summativeType: ''
-            },
-            ICS4U: {
-                simpleName: 'Computer and Information Science',
-                sections: ['Java Programming', 'Arrays and Game Design', 'Software Life Cycle'],
-                summativeType: ''
-            }
-        }
     }
 }
