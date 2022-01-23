@@ -8,28 +8,24 @@ body{
     margin-right:auto;
     text-align: center;
 }
-
 #title{
     font-family: PT sans;
     font-size: 6vw;
     font-weight: 500;
 }
-
 #subtitle{
     margin-top:1%;
     font-family: PT sans;
     font-size: 3vw;
     font-weight: 300;
 }
-
 #GradeDiv{
     width: 99%;
-    margin-top: 30px;
+    margin-top: 5%;
     margin-left: auto;
     margin-right:auto;
     text-align: center;
 }
-
 #Grade9{
     background-color: #BCE3FA;
     width: 15%;
@@ -41,7 +37,6 @@ body{
     font-family: PT sans;
     font-size: 3vw;
 }
-
 #Grade10{
     background: #BCE3FA;
     width: 15%;
@@ -53,7 +48,6 @@ body{
     font-family: PT sans;
     font-size: 3vw;
 }
-
 #Grade11{
     background: #BCE3FA;
     width: 15%;
@@ -65,10 +59,88 @@ body{
     font-family: PT sans;
     font-size: 3vw;
 }
-
 #Grade12{
     background: #BCE3FA;
     width: 100px;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+
+#TitleDiv1{
+    width: 99%;
+    margin-top:7%;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+#title1{
+    font-family: PT sans;
+    font-size: 6vw;
+    font-weight: 500;
+}
+#backToGrades{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#topicButton0{
+    background-color: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#topicButton1{
+    background-color: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#topicButton2{
+    background-color: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#topicButton3{
+    background-color: #BCE3FA;
+    width: 15%;
+    padding-top: 6%;
+    padding-bottom:6%;
+    margin: 4%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}
+#topicButton4{
+    background-color: #BCE3FA;
     width: 15%;
     padding-top: 6%;
     padding-bottom:6%;

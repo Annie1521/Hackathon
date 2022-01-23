@@ -42,22 +42,31 @@ document.getElementById('Grade11').addEventListener('click', function(){
     showTopics()
 })
 document.getElementById('Grade12').addEventListener('click', function(){
-    
     grade = 12
     showTopics()
 })
 
 }//end of showGrades
 
-
 //vvvv=======SHOW TOPICS======vvvvvv
 function showTopics() {
     hideGrades()
+    var TitleDiv1 = document.createElement("div");
+    TitleDiv1.id = "TitleDiv1";
+    document.body.appendChild(TitleDiv1)
+    var title1 = document.createElement("header");
+    title1.id = "title1"
+    var titleTxt1 = document.createTextNode("Grade " + grade)
+    title1.appendChild(titleTxt1)
+    TitleDiv1.appendChild(title1)
+    var backDiv = document.createElement("div");
+    backDiv.id = "backDiv";
+    document.body.appendChild(backDiv);
     var backTogrades = document.createElement('button')
     var backTogradesTxt = document.createTextNode('Back To Grades')
     backTogrades.id = 'backToGrades'//ID
     backTogrades.appendChild(backTogradesTxt)
-    document.body.appendChild(backTogrades)
+    backDiv.appendChild(backTogrades)
 
 
     backTogrades.addEventListener('click', function () {
@@ -65,6 +74,9 @@ function showTopics() {
         showGrades()
     })
 
+    var subjectDiv = document.createElement("div");
+    subjectDiv.id = "subjectDiv";
+    document.body.appendChild(subjectDiv);
 
     var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies']
 
@@ -73,19 +85,15 @@ function showTopics() {
         var topicButtonTxt = document.createTextNode(topics[j])
         topicButton.id = ('topicButton' + j)//ID
         topicButton.appendChild(topicButtonTxt)
-        document.body.appendChild(topicButton)
+        subjectDiv.appendChild(topicButton)
     }//end of loop
 }//end of showTopics
 
 //^^^^^^=======SHOW TOPICS=====^^^^^^
 
 function hideTopics() {
-    document.body.removeChild(topicButton0)
-    document.body.removeChild(topicButton1)
-    document.body.removeChild(topicButton2)
-    document.body.removeChild(topicButton3)
-    document.body.removeChild(topicButton4)
-    document.body.removeChild(backToGrades)
+    document.body.removeChild(subjectDiv)
+    document.body.removeChild(backDiv)
 }
 
 function hideGrades() {
