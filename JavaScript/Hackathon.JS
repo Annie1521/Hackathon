@@ -136,25 +136,55 @@ function showTopics() {
 
     document.getElementById('topicButton0').addEventListener('click', function () {
         topic = 'English'
-        hideTopics(); showClasses()
+        hideTopics();
+        if (grade == 12) {
+            showClasses()
+        }
+        if (grade == 11) {
+            showClassesEleven()
+        }
     })
     document.getElementById('topicButton1').addEventListener('click', function () {
         topic = 'STEM'
-        hideTopics(); showClasses()
+        hideTopics();
+        if (grade == 12) {
+            showClasses()
+        }
+        if (grade == 11) {
+            showClassesEleven()
+        }
     })
     document.getElementById('topicButton2').addEventListener('click', function () {
         topic = 'Art'
-        hideTopics(); showClasses()
+        hideTopics();
+        if (grade == 12) {
+            showClasses()
+        }
+        if (grade == 11) {
+            showClassesEleven()
+        }
     })
     document.getElementById('topicButton3').addEventListener('click', function () {
         topic = 'Languages'
-        hideTopics(); showClasses()
+        hideTopics();
+        if (grade == 12) {
+            showClasses()
+        }
+        if (grade == 11) {
+            showClassesEleven()
+        }
     })
     document.getElementById('topicButton4').addEventListener('click', function () {
         topic = 'Social Studies'
-        hideTopics(); showClasses()
+        hideTopics();
+        if (grade == 12) {
+            showClasses()
+        }
+        if (grade == 11) {
+            showClassesEleven()
+        }
     })
-}//end of showTopics
+}
 
 
 function hideTopics() {

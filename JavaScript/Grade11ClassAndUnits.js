@@ -42,6 +42,7 @@ function showClassesEleven() {
         hideClassesEleven()
         showTopics()
     })
+
     if (topic == "English" && grade == "11") {
         var EnglishClasses = Object.keys(courseInfoObj.grade11.English)
         for (e = 0; e < EnglishClasses.length; e++) {
@@ -143,7 +144,7 @@ function showUnitsEleven() {
     TitleDiv3.appendChild(title3)
 
     backToClasses.addEventListener('click', function () {
-        hideUnits()
+        hideUnitsEleven()
         showClassesEleven()
     })
 
