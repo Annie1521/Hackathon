@@ -36,7 +36,7 @@ inputDiv.style.display = 'none';
 addResB.addEventListener('click', function(){
     inputDiv.style.display = 'block';
     postB.addEventListener('click', function(){
-        inputDiv.style.display = 'block';
+        inputDiv.style.display = 'none';
         var nameV = nameInput.value;
         var linkV = linkInput.value;
         var commentV = commentInput.value;
