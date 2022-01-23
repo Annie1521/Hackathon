@@ -22,8 +22,8 @@ function CourseName(description,Rlink){
 
 var ENG4U= {
     IntrotoENG4U:['How to read academic writing','https://libguides.usc.edu/evaluate/scholarlyarticles'],
-    LiteraryCriticism: null
-    ,Poetry:['Poetry guide','http://www.teachenglishtoday.org/wp-content/uploads/2018/07/Notes-on-Grade-12-HL-poems-2.pdf'],
+    LiteraryCriticism: null,
+    Poetry:['Poetry guide','http://www.teachenglishtoday.org/wp-content/uploads/2018/07/Notes-on-Grade-12-HL-poems-2.pdf'],
     EssayAnalysis:['Tips for analysis Essays','https://sites.google.com/site/fungeng4u/tips-for-writing-a-literary-analysis-essay '],
     NovelStudy:['How to read Shakespeare','https://www.bardweb.net/content/ac/shakesreader.html'],
     ISU:['ISU book ideas','http://iss.scdsb.on.ca/Documents/Library%20Documents/Senior-ISU-Book-ListWEB.pdf '],

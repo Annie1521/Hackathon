@@ -579,9 +579,8 @@ function showVideos() {
 
 
     alert(course)
-
-    CourseName(course.UnitNoSpace[0],course.UnitNoSpace[1])
-
+    //var resource = Object.values([course][UnitNoSpace])
+    //console.log(resource)
 
 
 
