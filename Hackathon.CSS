@@ -733,10 +733,9 @@ body{
     font-size: 3vw;
 }
 
-<<<<<<< HEAD
 .commentClass{
     font-family: PT sans;
-=======
+}
 #classesDiv11{
     width: 99%;
     margin-top: 8%;
@@ -1047,7 +1046,40 @@ body{
     font-family: PT sans;
     font-size: 2vw;  
 }
-#LanguagesUn1ButtonTxt110,#LanguagesUn1ButtonTxt111,#LanguagesUn1ButtonTxt112,#LanguagesUn1ButtonTxt113,#LanguagesUn1ButtonTxt114{
+#LanguagesUn1ButtonTxt110,#LanguagesUn1ButtonTxt111,#LanguagesUn1ButtonTxt112,#LanguagesUn1ButtonTxt113,#LanguagesUn1ButtonTxt114,#LanguagesUn1ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#LanguagesUn3ButtonTxt110,#LanguagesUn3ButtonTxt111,#LanguagesUn3ButtonTxt112,#LanguagesUn3ButtonTxt113,#LanguagesUn3ButtonTxt114,#LanguagesUn3ButtonTxt115{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#SocialStudiesUn1ButtonTxt110,#SocialStudiesUn1ButtonTxt111,#SocialStudiesUn1ButtonTxt112,#SocialStudiesUn1ButtonTxt113,#SocialStudiesUn1ButtonTxt114{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:10%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
+}
+#SocialStudiesUn2ButtonTxt110,#SocialStudiesUn2ButtonTxt111,#SocialStudiesUn2ButtonTxt112,#SocialStudiesUn2ButtonTxt113,#SocialStudiesUn2ButtonTxt114,#SocialStudiesUn2ButtonTxt115,#SocialStudiesUn2ButtonTxt117{
     background-color: #BCE3FA;
     width: 22%;
     padding-top: 10%;
@@ -1057,5 +1089,15 @@ body{
     border: none;
     font-family: PT sans;
     font-size: 2vw;
->>>>>>> 13769fac4703065d7bc4b321e614b7e33812bedb
+}
+#SocialStudiesUn2ButtonTxt116{
+    background-color: #BCE3FA;
+    width: 22%;
+    padding-top: 10%;
+    padding-bottom:8%;
+    border-radius: 15px;
+    margin:4%;
+    border: none;
+    font-family: PT sans;
+    font-size: 2vw;
 }
