@@ -347,7 +347,7 @@ function MHF4U(){
     a.href = "https://people.richland.edu/james/lecture/m116/functions/combinations.html ";
  
 }
-MHF4U()
+
 
 
 
