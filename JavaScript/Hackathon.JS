@@ -576,9 +576,6 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
-    showVideoAPI()
-
-
     alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
