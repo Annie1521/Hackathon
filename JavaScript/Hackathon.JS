@@ -580,8 +580,10 @@ function showVideos() {
 
 
     alert(course)
+    //var resource = Object.values([course][UnitNoSpace])
+    //console.log(resource)
 
-    CourseName(course.UnitNoSpace[0],course.UnitNoSpace[1])
+
 
     backToUnits.addEventListener('click', function () {
         hideVideos()
