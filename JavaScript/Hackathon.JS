@@ -2,7 +2,7 @@
 ///ONLOAD FUNCTION
 showGrades()
 
-function showGrades(){
+function showGrades() {
 
     var TitleDiv = document.createElement("div");
     TitleDiv.id = "TitleDiv";
@@ -21,35 +21,35 @@ function showGrades(){
     GradeDiv.id = "GradeDiv";
     document.body.appendChild(GradeDiv);
 
-    for(i=9; i<13; i++){
+    for (i = 9; i < 13; i++) {
 
-var gradeBtn= document.createElement('button')
-var gradeTxt = document.createTextNode('Grade ' + i)
-gradeBtn.id = ('Grade' + i)//ID
-gradeBtn.appendChild(gradeTxt)
-document.body.appendChild(gradeBtn)
+        var gradeBtn = document.createElement('button')
+        var gradeTxt = document.createTextNode('Grade ' + i)
+        gradeBtn.id = ('Grade' + i)//ID
+        gradeBtn.appendChild(gradeTxt)
+        document.body.appendChild(gradeBtn)
     }//end of loop
-document.getElementById('Grade9').addEventListener('click', function(){
-    grade = 9
-    showTopics()
-})
-document.getElementById('Grade10').addEventListener('click', function(){
-    grade = 10
-    showTopics()
-})
-document.getElementById('Grade11').addEventListener('click', function(){
-    grade = 11
-    showTopics()
-})
-document.getElementById('Grade12').addEventListener('click', function(){
-    grade = 12
-    showTopics()
-})
+    document.getElementById('Grade9').addEventListener('click', function () {
+        grade = 9
+        showTopics()
+    })
+    document.getElementById('Grade10').addEventListener('click', function () {
+        grade = 10
+        showTopics()
+    })
+    document.getElementById('Grade11').addEventListener('click', function () {
+        grade = 11
+        showTopics()
+    })
+    document.getElementById('Grade12').addEventListener('click', function () {
+        grade = 12
+        showTopics()
+    })
 
 }//end of showGrades
 
 
-function hideGrades(){
+function hideGrades() {
     document.body.removeChild(Grade9)
     document.body.removeChild(Grade10)
     document.body.removeChild(Grade11)
@@ -87,46 +87,73 @@ function showTopics() {
     var subjectDiv = document.createElement("div");
     subjectDiv.id = "subjectDiv";
     document.body.appendChild(subjectDiv);
-    
-var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies'] 
 
-for (j=0; j<5; j++){
-var topicButton = document.createElement('button')
-var topicButtonTxt = document.createTextNode(topics[j])
-topicButton.id = ('topicButton'+ j)//ID
-topicButton.appendChild(topicButtonTxt)
-subjectDiv.appendChild(topicButton)
-}//end of loop
+    var topics = ['English', 'STEM', 'Art', 'Languages', 'Socal Studies']
 
-document.getElementById('topicButton0').addEventListener('click', function(){
-    topic = 'English'  
-    hideTopics(); showClasses()
-})
-document.getElementById('topicButton1').addEventListener('click', function(){
-   topic = 'STEM'
-    hideTopics(); showClasses()
-})
-document.getElementById('topicButton2').addEventListener('click', function(){
-    topic = 'Art'
-    hideTopics(); showClasses()
-})
-document.getElementById('topicButton3').addEventListener('click', function(){
-    topic = 'Languages'
-    hideTopics(); showClasses()
-})
-document.getElementById('topicButton4').addEventListener('click', function(){
-    topic = 'Socal Studies'
-    hideTopics(); showClasses()
-})
+    for (j = 0; j < 5; j++) {
+        var topicButton = document.createElement('button')
+        var topicButtonTxt = document.createTextNode(topics[j])
+        topicButton.id = ('topicButton' + j)//ID
+        topicButton.appendChild(topicButtonTxt)
+        subjectDiv.appendChild(topicButton)
+    }//end of loop
+
+    document.getElementById('topicButton0').addEventListener('click', function () {
+        topic = 'English'
+        hideTopics(); showClasses()
+    })
+    document.getElementById('topicButton1').addEventListener('click', function () {
+        topic = 'STEM'
+        hideTopics(); showClasses()
+    })
+    document.getElementById('topicButton2').addEventListener('click', function () {
+        topic = 'Art'
+        hideTopics(); showClasses()
+    })
+    document.getElementById('topicButton3').addEventListener('click', function () {
+        topic = 'Languages'
+        hideTopics(); showClasses()
+    })
+    document.getElementById('topicButton4').addEventListener('click', function () {
+        topic = 'Socal Studies'
+        hideTopics(); showClasses()
+    })
 }//end of showTopics
 
-//^^^^^^=======SHOW TOPICS=====^^^^^^
 
 function hideTopics() {
     document.body.removeChild(subjectDiv)
     document.body.removeChild(backDiv)
+    document.body.removeChild(TitleDiv1)
 }
 
+//vvvv=======SHOW TOPICS======vvvvvv
+
+ function showClasses() {
+//     hideTopics()
+    var backDiv2 = document.createElement("div");
+    backDiv2.id = "backDiv2";
+    document.body.appendChild(backDiv2);
+    var backToTopics = document.createElement('button')
+    var backToTopicsTxt = document.createTextNode('Back')
+    backToTopics.id = 'backToTopics'//ID
+    backToTopics.appendChild(backToTopicsTxt)
+    backDiv2.appendChild(backToTopics)
+
+    var TitleDiv2 = document.createElement("div");
+    TitleDiv2.id = "TitleDiv2";
+    document.body.appendChild(TitleDiv2)
+    var title2 = document.createElement("header");
+    title2.id = "title2"
+    var titleTxt2 = document.createTextNode(topic)
+    title2.appendChild(titleTxt2)
+    TitleDiv2.appendChild(title2)
+
+    backToTopics.addEventListener('click', function () {
+        hideClasses()
+        //showTopics()
+    })
+   
 function hideGrades() {
     document.body.removeChild(Grade9)
     document.body.removeChild(Grade10)
@@ -165,5 +192,102 @@ var snippet = info.SocialStudies
 classNum = (Object.keys(snippet).length)
 
 
+
+    var classesDiv = document.createElement("div");
+    classesDiv.id = "classesDiv";
+    document.body.appendChild(classesDiv);
+
+    //GET LIST OF COURSES FROM OBJECT
+
+    if (topic == "English" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+    if (topic == "STEM" && grade == "12") {
+        var STEMClasses = Object.keys(courseInfoObj.grade12.STEM)
+        for (e = 0; e<STEMClasses.length ; e++) {
+            var STEMButton = document.createElement('button')
+            var STEMButtonTxt = document.createTextNode(STEMClasses[e])
+            STEMButton.id = ('classButton' + e)//ID
+            STEMButton.appendChild(STEMButtonTxt)
+            classesDiv.appendChild(STEMButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Art" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        console.log(EnglishClasses)
+        console.log(EnglishClasses.length)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Languages" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        console.log(EnglishClasses)
+        console.log(EnglishClasses.length)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Social Studies" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        console.log(EnglishClasses)
+        console.log(EnglishClasses.length)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+
+//     // document.getElementById('topicButton0').addEventListener('click', function () {
+//     //     topic = 'English'
+//     //     hideTopics(); showClasses()
+//     // })
+//     // document.getElementById('topicButton1').addEventListener('click', function () {
+//     //     topic = 'STEM'
+//     //     hideTopics(); showClasses()
+//     // })
+//     // document.getElementById('topicButton2').addEventListener('click', function () {
+//     //     topic = 'Art'
+//     //     hideTopics(); showClasses()
+//     // })
+//     // document.getElementById('topicButton3').addEventListener('click', function () {
+//     //     topic = 'Languages'
+//     //     hideTopics(); showClasses()
+//     // })
+//     // document.getElementById('topicButton4').addEventListener('click', function () {
+//     //     topic = 'Socal Studies'
+//     //     hideTopics(); showClasses()
+//     // })
+ }//end of showTopics
+
+
+function hideClasses() {
+    //remove classes
 }
 }
