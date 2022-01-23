@@ -576,12 +576,9 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
-<<<<<<< HEAD
-=======
     showVideoAPI()
 
 
->>>>>>> 13769fac4703065d7bc4b321e614b7e33812bedb
     alert(course)
 
     CourseName(course.UnitNoSpace[0],course.UnitNoSpace[1])
