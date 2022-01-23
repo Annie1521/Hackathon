@@ -6,7 +6,38 @@ var UnitNoSpace = "" //example: IntrotoENG4U
 ///ONLOAD FUNCTION
 showGrades()
 
-//vvvv=======SHOW GRADES======vvvvvv
+var resourceDiv=document.createElement('div')
+resourceDiv.id="resourceDiv"
+document.body.appendChild(resourceDiv)
+//base function use for each course
+function CourseName(description,Rlink){
+
+    var nameDiv=document.createElement('div')
+    nameDiv.id='nameDiv'
+    resourceDiv.appendChild(nameDiv)
+
+    var a=document.createElement('a')
+    a.id='a'
+    nameDiv.appendChild(a)
+
+    var link=document.createTextNode(description)
+    a.appendChild(link)
+    a.href = Rlink; 
+
+    
+
+}
+var ENG4U= {
+    IntrotoENG4U:['How to read academic writing','https://libguides.usc.edu/evaluate/scholarlyarticles'],
+    LiteraryCriticism: null
+    ,Poetry:['Poetry guide','http://www.teachenglishtoday.org/wp-content/uploads/2018/07/Notes-on-Grade-12-HL-poems-2.pdf'],
+    EssayAnalysis:['Tips for analysis Essays','https://sites.google.com/site/fungeng4u/tips-for-writing-a-literary-analysis-essay '],
+    NovelStudy:['How to read Shakespeare','https://www.bardweb.net/content/ac/shakesreader.html'],
+    ISU:['ISU book ideas','http://iss.scdsb.on.ca/Documents/Library%20Documents/Senior-ISU-Book-ListWEB.pdf '],
+
+
+}
+
 function showGrades() {
 
     var TitleDiv = document.createElement("div");
@@ -105,53 +136,23 @@ function showTopics() {
 
     document.getElementById('topicButton0').addEventListener('click', function () {
         topic = 'English'
-        hideTopics();
-        if (grade == 12) {
-            showClasses()
-        }
-        if (grade == 11) {
-            showClassesEleven()
-        }
+        hideTopics(); showClasses()
     })
     document.getElementById('topicButton1').addEventListener('click', function () {
         topic = 'STEM'
-        hideTopics();
-        if (grade == 12) {
-            showClasses()
-        }
-        if (grade == 11) {
-            showClassesEleven()
-        }
+        hideTopics(); showClasses()
     })
     document.getElementById('topicButton2').addEventListener('click', function () {
         topic = 'Art'
-        hideTopics();
-        if (grade == 12) {
-            showClasses()
-        }
-        if (grade == 11) {
-            showClassesEleven()
-        }
+        hideTopics(); showClasses()
     })
     document.getElementById('topicButton3').addEventListener('click', function () {
         topic = 'Languages'
-        hideTopics();
-        if (grade == 12) {
-            showClasses()
-        }
-        if (grade == 11) {
-            showClassesEleven()
-        }
+        hideTopics(); showClasses()
     })
     document.getElementById('topicButton4').addEventListener('click', function () {
         topic = 'Social Studies'
-        hideTopics();
-        if (grade == 12) {
-            showClasses()
-        }
-        if (grade == 11) {
-            showClassesEleven()
-        }
+        hideTopics(); showClasses()
     })
 }//end of showTopics
 
@@ -499,6 +500,8 @@ function showUnits() {
         for (un52 = 0; un52 < CHY4Uunits.length; un52++) {
             var SocialStudiesUn3Button = document.createElement('button')
             var SocialStudiesUn3ButtonTxt = document.createTextNode(CHY4Uunits[un52])
+            //annie doing something
+            search(CHY4Uunits[un52])
             SocialStudiesUn3Button.id = ('SocialStudiesUn3ButtonTxt' + un52)//ID
             SocialStudiesUn3Button.appendChild(SocialStudiesUn3ButtonTxt)
             unitDiv.appendChild(SocialStudiesUn3Button)
@@ -545,9 +548,9 @@ function showVideos() {
 
 
 
-    alert(UnitNoSpace)
+    alert(course)
 
-    CourseName(course.UnitNoSpace[1],course.UnitNoSpace[2])
+    CourseName(course.UnitNoSpace[0],course.UnitNoSpace[1])
 
 
 

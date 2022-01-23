@@ -19,7 +19,7 @@ function CourseName(description,Rlink){
     
 
 }
-CourseName()
+
 var ENG4U= {
     IntrotoENG4U:['How to read academic writing','https://libguides.usc.edu/evaluate/scholarlyarticles'],
     LiteraryCriticism: null
@@ -30,6 +30,7 @@ var ENG4U= {
 
 
 }
+alert(ENG4U.IntrotoENG4U)
 
 var ETS4U={
     IntrotoETS4U:['How to read academic writing','https://libguides.usc.edu/evaluate/scholarlyarticles'],
