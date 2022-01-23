@@ -546,20 +546,18 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
-
-
     alert(course)
 
     CourseName(course.UnitNoSpace[0],course.UnitNoSpace[1])
-
-
-
 
     backToUnits.addEventListener('click', function () {
         hideVideos()
         showUnits()
     })
+    
+    makeComment();
 }
+
 
 function hideVideos() {
     document.body.removeChild(TitleDiv4)
