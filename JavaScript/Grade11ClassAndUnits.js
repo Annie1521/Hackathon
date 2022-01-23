@@ -33,87 +33,86 @@ function showClassesEleven() {
     })
 
 
-    var classesDiv = document.createElement("div");
-    classesDiv.id = "classesDiv";
-    document.body.appendChild(classesDiv);
+    var classesDiv11 = document.createElement("div");
+    classesDiv11.id = "classesDiv11";
+    document.body.appendChild(classesDiv11);
 
 
     backToTopics.addEventListener('click', function () {
         hideClassesEleven()
         showTopics()
     })
-
     if (topic == "English" && grade == "11") {
         var EnglishClasses = Object.keys(courseInfoObj.grade11.English)
         for (e = 0; e < EnglishClasses.length; e++) {
-            var EnglishButton = document.createElement('button')
-            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
-            EnglishButton.id = ('EnglishButton' + e)//ID
-            EnglishButton.appendChild(EnglishButtonTxt)
-            classesDiv.appendChild(EnglishButton)
+            var EnglishButton11 = document.createElement('button')
+            var EnglishButtonTxt11 = document.createTextNode(EnglishClasses[e])
+            EnglishButton11.id = ('EnglishButton11' + e)//ID
+            EnglishButton11.appendChild(EnglishButtonTxt11)
+            classesDiv11.appendChild(EnglishButton11)
         }//end of loop
     }
 
-    if (topic == "STEM" && grade == "12") {
-        var STEMClasses = Object.keys(courseInfoObj.grade12.STEM)
+    if (topic == "STEM" && grade == "11") {
+        var STEMClasses = Object.keys(courseInfoObj.grade11.STEM)
         for (s = 0; s < STEMClasses.length; s++) {
-            var STEMButton = document.createElement('button')
-            var STEMButtonTxt = document.createTextNode(STEMClasses[s])
-            STEMButton.id = ('STEMButton' + s)//ID
-            STEMButton.appendChild(STEMButtonTxt)
-            classesDiv.appendChild(STEMButton)
+            var STEMButton11 = document.createElement('button')
+            var STEMButtonTxt11 = document.createTextNode(STEMClasses[s])
+            STEMButton11.id = ('STEMButton11' + s)//ID
+            STEMButton11.appendChild(STEMButtonTxt11)
+            classesDiv11.appendChild(STEMButton11)
         }//end of loop
     }
 
 
-    if (topic == "Art" && grade == "12") {
-        var ArtClasses = Object.keys(courseInfoObj.grade12.Art)
+    if (topic == "Art" && grade == "11") {
+        var ArtClasses = Object.keys(courseInfoObj.grade11.Art)
         for (a = 0; a < ArtClasses.length; a++) {
-            var ArtButton = document.createElement('button')
-            var ArtButtonTxt = document.createTextNode(ArtClasses[a])
-            ArtButton.id = ('ArtButton' + a)//ID
-            ArtButton.appendChild(ArtButtonTxt)
-            classesDiv.appendChild(ArtButton)
+            var ArtButton11 = document.createElement('button')
+            var ArtButtonTxt11 = document.createTextNode(ArtClasses[a])
+            ArtButton11.id = ('ArtButton11' + a)//ID
+            ArtButton11.appendChild(ArtButtonTxt11)
+            classesDiv11.appendChild(ArtButton11)
         }//end of loop
     }
 
 
-    if (topic == "Languages" && grade == "12") {
-        var LanguagesClasses = Object.keys(courseInfoObj.grade12.Languages)
+    if (topic == "Languages" && grade == "11") {
+        var LanguagesClasses = Object.keys(courseInfoObj.grade11.Languages)
         for (l = 0; l < LanguagesClasses.length; l++) {
-            var LanguagesButton = document.createElement('button')
-            var LanguagesButtonTxt = document.createTextNode(LanguagesClasses[l])
-            LanguagesButton.id = ('LanguagesButton' + l)//ID
-            LanguagesButton.appendChild(LanguagesButtonTxt)
-            classesDiv.appendChild(LanguagesButton)
+            var LanguagesButton11 = document.createElement('button')
+            var LanguagesButtonTxt11 = document.createTextNode(LanguagesClasses[l])
+            LanguagesButton11.id = ('LanguagesButton11' + l)//ID
+            LanguagesButton11.appendChild(LanguagesButtonTxt11)
+            classesDiv11.appendChild(LanguagesButton11)
         }//end of loop
     }
 
 
-    if (topic == "Social Studies" && grade == "12") {
-        var SocialStudiesClasses = Object.keys(courseInfoObj.grade12.SocialStudies)
+    if (topic == "Social Studies" && grade == "11") {
+        var SocialStudiesClasses = Object.keys(courseInfoObj.grade11.SocialStudies)
         for (u = 0; u < SocialStudiesClasses.length; u++) {
-            var SocialStudiesButton = document.createElement('button')
-            var SocialStudiesButtonTxt = document.createTextNode(SocialStudiesClasses[u])
-            SocialStudiesButton.id = ('SocialStudiesButton' + u)//ID
-            SocialStudiesButton.appendChild(SocialStudiesButtonTxt)
-            classesDiv.appendChild(SocialStudiesButton)
+            var SocialStudiesButton11 = document.createElement('button')
+            var SocialStudiesButtonTxt11 = document.createTextNode(SocialStudiesClasses[u])
+            SocialStudiesButton11.id = ('SocialStudiesButton11' + u)//ID
+            SocialStudiesButton11.appendChild(SocialStudiesButtonTxt11)
+            classesDiv11.appendChild(SocialStudiesButton11)
         }//end of loop
     }
 
 
-    document.getElementById('classesDiv').addEventListener('click', function (e) {
+    document.getElementById('classesDiv11').addEventListener('click', function (e) {
         button = e.target.id
         num = button.slice(-1)
         nospace = topic.replace(/\s/g, ''); //removes the spaces from 'Social Studies'
-        course = Object.keys(courseInfoObj.grade12[nospace])[num]
-        hideClasses()
-        showUnits()
+        course = Object.keys(courseInfoObj.grade11[nospace])[num]
+        hideClassesEleven()
+        showUnitsEleven()
     })
 
 
-    function hideClasses() {
-        var Child = document.getElementById("classesDiv")
+    function hideClassesEleven() {
+        var Child = document.getElementById("classesDiv11")
         Child.parentNode.removeChild(Child)
         document.body.removeChild(backDiv2)
         document.body.removeChild(TitleDiv2)
@@ -122,7 +121,7 @@ function showClassesEleven() {
 
 //vvvv=======SHOW UNITS======vvvvvv
 
-function showUnits() {
+function showUnitsEleven() {
     var backDiv3 = document.createElement("div3");
     backDiv3.id = "backDiv3";
     document.body.appendChild(backDiv3);
@@ -139,220 +138,190 @@ function showUnits() {
 
     var title3 = document.createElement("header");
     title3.id = "title3"
-    var titleTxt3 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + " (" + course + ")")
+    var titleTxt3 = document.createTextNode("Grade 11 " + courseInfoObj.grade11[nospace][course].simpleName + " (" + course + ")")
     title3.appendChild(titleTxt3)
     TitleDiv3.appendChild(title3)
 
     backToClasses.addEventListener('click', function () {
         hideUnits()
-        showClasses()
+        showClassesEleven()
     })
 
-    var unitDiv = document.createElement("div");
-    unitDiv.id = "unitDiv";
-    document.body.appendChild(unitDiv);
+    var unitDiv11 = document.createElement("div");
+    unitDiv11.id = "unitDiv11";
+    document.body.appendChild(unitDiv11);
 
-    if (course == "ENG4U" && grade == "12") {
-        var ENG4Uunits = Object.values(courseInfoObj.grade12.English.ENG4U.sections)
-        for (un1 = 0; un1 < ENG4Uunits.length; un1++) {
-            var EngUn1Button = document.createElement('button')
-            var EngUn1ButtonTxt = document.createTextNode(ENG4Uunits[un1])
-            EngUn1Button.id = ('EngUn1ButtonTxt' + un1)//ID
-            EngUn1Button.appendChild(EngUn1ButtonTxt)
-            unitDiv.appendChild(EngUn1Button)
+    if (course == "ENG3U" && grade == "11") {
+        var ENG3Uunits = Object.values(courseInfoObj.grade11.English.ENG3U.sections)
+        for (un1 = 0; un1 < ENG3Uunits.length; un1++) {
+            var EngUn1Button11 = document.createElement('button')
+            var EngUn1ButtonTxt11 = document.createTextNode(ENG3Uunits[un1])
+            EngUn1Button11.id = ('EngUn1ButtonTxt11' + un1)//ID
+            EngUn1Button11.appendChild(EngUn1ButtonTxt11)
+            unitDiv11.appendChild(EngUn1Button11)
         }//end of loop
     }
-    if (course == "ETS4U" && grade == "12") {
-        var ETS4Uunits = Object.values(courseInfoObj.grade12.English.ETS4U.sections)
-        for (un11 = 0; un11 < ETS4Uunits.length; un11++) {
-            var EngUn2Button = document.createElement('button')
-            var EngUn2ButtonTxt = document.createTextNode(ETS4Uunits[un11])
-            EngUn2Button.id = ('EngUn2ButtonTxt' + un11)//ID
-            EngUn2Button.appendChild(EngUn2ButtonTxt)
-            unitDiv.appendChild(EngUn2Button)
+    if (course == "MCR3U" && grade == "11") {
+        var MCR3Uunits = Object.values(courseInfoObj.grade11.STEM.MCR3U.sections)
+        for (un2 = 0; un2 < MCR3Uunits.length; un2++) {
+            var STEMUn1Button11 = document.createElement('button')
+            var STEMUn1ButtonTxt11 = document.createTextNode(MCR3Uunits[un2])
+            STEMUn1Button11.id = ('STEMUn1ButtonTxt11' + un2)//ID
+            STEMUn1Button11.appendChild(STEMUn1ButtonTxt11)
+            unitDiv11.appendChild(STEMUn1Button11)
         }//end of loop
     }
-    if (course == "EWC4U" && grade == "12") {
-        var EWC4Uunits = Object.values(courseInfoObj.grade12.English.EWC4U.sections)
-        for (un12 = 0; un12 < EWC4Uunits.length; un12++) {
-            var EngUn3Button = document.createElement('button')
-            var EngUn3ButtonTxt = document.createTextNode(EWC4Uunits[un12])
-            EngUn3Button.id = ('EngUn3ButtonTxt' + un12)//ID
-            EngUn3Button.appendChild(EngUn3ButtonTxt)
-            unitDiv.appendChild(EngUn3Button)
+    if (course == "TGJ3M" && grade == "11") {
+        var TGJ3Munits = Object.values(courseInfoObj.grade11.STEM.TGJ3M.sections)
+        for (un21 = 0; un21 < TGJ3Munits.length; un21++) {
+            var STEMUn2Button11 = document.createElement('button')
+            var STEMUn2ButtonTxt11 = document.createTextNode(TGJ3Munits[un21])
+            STEMUn2Button11.id = ('STEMUn2ButtonTxt11' + un21)//ID
+            STEMUn2Button11.appendChild(STEMUn2ButtonTxt11)
+            unitDiv11.appendChild(STEMUn2Button11)
         }//end of loop
     }
-    if (course == "MCV4U" && grade == "12") {
-        var MCV4Uunits = Object.values(courseInfoObj.grade12.STEM.MCV4U.sections)
-        for (un2 = 0; un2 < MCV4Uunits.length; un2++) {
-            var STEMUn1Button = document.createElement('button')
-            var STEMUn1ButtonTxt = document.createTextNode(MCV4Uunits[un2])
-            STEMUn1Button.id = ('STEMUn1ButtonTxt' + un2)//ID
-            STEMUn1Button.appendChild(STEMUn1ButtonTxt)
-            unitDiv.appendChild(STEMUn1Button)
+    if (course == "SBI3U" && grade == "11") {
+        var SBI3Uunits = Object.values(courseInfoObj.grade11.STEM.SBI3U.sections)
+        for (un23 = 0; un23 < SBI3Uunits.length; un23++) {
+            var STEMUn4Button11 = document.createElement('button')
+            var STEMUn4ButtonTxt11 = document.createTextNode(SBI3Uunits[un23])
+            STEMUn4Button11.id = ('STEMUn4ButtonTxt11' + un23)//ID
+            STEMUn4Button11.appendChild(STEMUn4ButtonTxt11)
+            unitDiv11.appendChild(STEMUn4Button11)
         }//end of loop
     }
-    if (course == "MHF4U" && grade == "12") {
-        var MHF4Uunits = Object.values(courseInfoObj.grade12.STEM.MHF4U.sections)
-        for (un21 = 0; un21 < MHF4Uunits.length; un21++) {
-            var STEMUn2Button = document.createElement('button')
-            var STEMUn2ButtonTxt = document.createTextNode(MHF4Uunits[un21])
-            STEMUn2Button.id = ('STEMUn2ButtonTxt' + un21)//ID
-            STEMUn2Button.appendChild(STEMUn2ButtonTxt)
-            unitDiv.appendChild(STEMUn2Button)
+    if (course == "SCH3U" && grade == "11") {
+        var SCH3Uunits = Object.values(courseInfoObj.grade11.STEM.SCH3U.sections)
+        for (un24 = 0; un24 < SCH3Uunits.length; un24++) {
+            var STEMUn5Button11 = document.createElement('button')
+            var STEMUn5ButtonTxt11 = document.createTextNode(SCH3Uunits[un24])
+            STEMUn5Button11.id = ('STEMUn5ButtonTxt11' + un24)//ID
+            STEMUn5Button11.appendChild(STEMUn5ButtonTxt11)
+            unitDiv11.appendChild(STEMUn5Button11)
         }//end of loop
     }
-    if (course == "MDM4U" && grade == "12") {
-        var MDM4Uunits = Object.values(courseInfoObj.grade12.STEM.MDM4U.sections)
-        for (un22 = 0; un22 < MDM4Uunits.length; un22++) {
-            var STEMUn3Button = document.createElement('button')
-            var STEMUn3ButtonTxt = document.createTextNode(MDM4Uunits[un22])
-            STEMUn3Button.id = ('STEMUn3ButtonTxt' + un22)//ID
-            STEMUn3Button.appendChild(STEMUn3ButtonTxt)
-            unitDiv.appendChild(STEMUn3Button)
+    if (course == "SPH3U" && grade == "11") {
+        var SPH3Uunits = Object.values(courseInfoObj.grade11.STEM.SPH3U.sections)
+        for (un25 = 0; un25 < SPH3Uunits.length; un25++) {
+            var STEMUn6Button11 = document.createElement('button')
+            var STEMUn6ButtonTxt11 = document.createTextNode(SPH3Uunits[un25])
+            STEMUn6Button11.id = ('STEMUn6ButtonTxt11' + un25)//ID
+            STEMUn6Button11.appendChild(STEMUn6ButtonTxt11)
+            unitDiv11.appendChild(STEMUn6Button11)
         }//end of loop
     }
-    if (course == "SBI4U" && grade == "12") {
-        var SBI4Uunits = Object.values(courseInfoObj.grade12.STEM.SBI4U.sections)
-        for (un23 = 0; un23 < SBI4Uunits.length; un23++) {
-            var STEMUn4Button = document.createElement('button')
-            var STEMUn4ButtonTxt = document.createTextNode(SBI4Uunits[un23])
-            STEMUn4Button.id = ('STEMUn4ButtonTxt' + un23)//ID
-            STEMUn4Button.appendChild(STEMUn4ButtonTxt)
-            unitDiv.appendChild(STEMUn4Button)
+    if (course == "TDJ3M" && grade == "11") {
+        var TDJ3Munits = Object.values(courseInfoObj.grade11.STEM.TDJ3M.sections)
+        for (un26 = 0; un26 < TDJ3Munits.length; un26++) {
+            var STEMUn7Button11 = document.createElement('button')
+            var STEMUn7ButtonTxt11 = document.createTextNode(TDJ3Munits[un26])
+            STEMUn7Button11.id = ('STEMUn7ButtonTxt11' + un26)//ID
+            STEMUn7Button11.appendChild(STEMUn7ButtonTxt11)
+            unitDiv11.appendChild(STEMUn7Button11)
         }//end of loop
     }
-    if (course == "SCH4U" && grade == "12") {
-        var SCH4Uunits = Object.values(courseInfoObj.grade12.STEM.SCH4U.sections)
-        for (un24 = 0; un24 < SCH4Uunits.length; un24++) {
-            var STEMUn5Button = document.createElement('button')
-            var STEMUn5ButtonTxt = document.createTextNode(SCH4Uunits[un24])
-            STEMUn5Button.id = ('STEMUn5ButtonTxt' + un24)//ID
-            STEMUn5Button.appendChild(STEMUn5ButtonTxt)
-            unitDiv.appendChild(STEMUn5Button)
+    if (course == "ICS3U" && grade == "11") {
+        var ICS3Uunits = Object.values(courseInfoObj.grade11.STEM.ICS3U.sections)
+        for (un27 = 0; un27 < ICS3Uunits.length; un27++) {
+            var STEMUn8Button11 = document.createElement('button')
+            var STEMUn8ButtonTxt11 = document.createTextNode(ICS3Uunits[un27])
+            STEMUn8Button11.id = ('STEMUn8ButtonTxt11' + un27)//ID
+            STEMUn8Button11.appendChild(STEMUn8ButtonTxt11)
+            unitDiv11.appendChild(STEMUn8Button11)
         }//end of loop
     }
-    if (course == "SPH4U" && grade == "12") {
-        var SPH4Uunits = Object.values(courseInfoObj.grade12.STEM.SPH4U.sections)
-        for (un25 = 0; un25 < SPH4Uunits.length; un25++) {
-            var STEMUn6Button = document.createElement('button')
-            var STEMUn6ButtonTxt = document.createTextNode(SPH4Uunits[un25])
-            STEMUn6Button.id = ('STEMUn6ButtonTxt' + un25)//ID
-            STEMUn6Button.appendChild(STEMUn6ButtonTxt)
-            unitDiv.appendChild(STEMUn6Button)
+    if (course == "ADA3M" && grade == "11") {
+        var ADA3Munits = Object.values(courseInfoObj.grade11.Art.ADA3M.sections)
+        for (un3 = 0; un3 < ADA3Munits.length; un3++) {
+            var ArtUn1Button11 = document.createElement('button')
+            var ArtUn1ButtonTxt11 = document.createTextNode(ADA3Munits[un3])
+            ArtUn1Button11.id = ('ArtUn1ButtonTxt11' + un3)//ID
+            ArtUn1Button11.appendChild(ArtUn1ButtonTxt11)
+            unitDiv11.appendChild(ArtUn1Button11)
         }//end of loop
     }
-    if (course == "TGJ4M" && grade == "12") {
-        var TGJ4Munits = Object.values(courseInfoObj.grade12.STEM.TGJ4M.sections)
-        for (un26 = 0; un26 < TGJ4Munits.length; un26++) {
-            var STEMUn7Button = document.createElement('button')
-            var STEMUn7ButtonTxt = document.createTextNode(TGJ4Munits[un26])
-            STEMUn7Button.id = ('STEMUn7ButtonTxt' + un26)//ID
-            STEMUn7Button.appendChild(STEMUn7ButtonTxt)
-            unitDiv.appendChild(STEMUn7Button)
+    if (course == "AVI3M" && grade == "11") {
+        var AVI3Munits = Object.values(courseInfoObj.grade11.Art.AVI3M.sections)
+        for (un31 = 0; un31 < AVI3Munits.length; un31++) {
+            var ArtUn2Button11 = document.createElement('button')
+            var ArtUn2ButtonTxt11 = document.createTextNode(AVI3Munits[un31])
+            ArtUn2Button11.id = ('ArtUn2ButtonTxt11' + un31)//ID
+            ArtUn2Button11.appendChild(ArtUn2ButtonTxt11)
+            unitDiv11.appendChild(ArtUn2Button11)
         }//end of loop
     }
-    if (course == "ICS4U" && grade == "12") {
-        var ICS4Uunits = Object.values(courseInfoObj.grade12.STEM.ICS4U.sections)
-        for (un27 = 0; un27 < ICS4Uunits.length; un27++) {
-            var STEMUn8Button = document.createElement('button')
-            var STEMUn8ButtonTxt = document.createTextNode(ICS4Uunits[un27])
-            STEMUn8Button.id = ('STEMUn8ButtonTxt' + un27)//ID
-            STEMUn8Button.appendChild(STEMUn8ButtonTxt)
-            unitDiv.appendChild(STEMUn8Button)
+    if (course == "AMS3U" && grade == "11") {
+        var AMS3Uunits = Object.values(courseInfoObj.grade11.Art.AMS3U.sections)
+        for (un32 = 0; un32 < AMS3Uunits.length; un32++) {
+            var ArtUn3Button11 = document.createElement('button')
+            var ArtUn3ButtonTxt11 = document.createTextNode(AMS3Uunits[un32])
+            ArtUn3Button11.id = ('ArtUn3ButtonTxt11' + un32)//ID
+            ArtUn3Button11.appendChild(ArtUn3ButtonTxt11)
+            unitDiv11.appendChild(ArtUn3Button11)
         }//end of loop
     }
-    if (course == "ADA4M" && grade == "12") {
-        var ADA4Munits = Object.values(courseInfoObj.grade12.Art.ADA4M.sections)
-        for (un3 = 0; un3 < ADA4Munits.length; un3++) {
-            var ArtUn1Button = document.createElement('button')
-            var ArtUn1ButtonTxt = document.createTextNode(ADA4Munits[un3])
-            ArtUn1Button.id = ('ArtUn1ButtonTxt' + un3)//ID
-            ArtUn1Button.appendChild(ArtUn1ButtonTxt)
-            unitDiv.appendChild(ArtUn1Button)
+    if (course == "AWQ3M" && grade == "11") {
+        var AWQ3Munits = Object.values(courseInfoObj.grade11.Art.AWQ3M.sections)
+        for (un33 = 0; un33 < AWQ3Munits.length; un33++) {
+            var ArtUn4Button11 = document.createElement('button')
+            var ArtUn4ButtonTxt11 = document.createTextNode(AWQ3Munits[un33])
+            ArtUn4Button11.id = ('ArtUn4ButtonTxt11' + un33)//ID
+            ArtUn4Button11.appendChild(ArtUn4ButtonTxt11)
+            unitDiv11.appendChild(ArtUn4Button11)
         }//end of loop
     }
-    if (course == "AVI4M" && grade == "12") {
-        var AVI4Munits = Object.values(courseInfoObj.grade12.Art.AVI4M.sections)
-        for (un31 = 0; un31 < AVI4Munits.length; un31++) {
-            var ArtUn2Button = document.createElement('button')
-            var ArtUn2ButtonTxt = document.createTextNode(AVI4Munits[un31])
-            ArtUn2Button.id = ('ArtUn2ButtonTxt' + un31)//ID
-            ArtUn2Button.appendChild(ArtUn2ButtonTxt)
-            unitDiv.appendChild(ArtUn2Button)
+    if (course == "FSF3U" && grade == "11") {
+        var FSF3Uunits = Object.values(courseInfoObj.grade11.Languages.FSF3U.sections)
+        for (un4 = 0; un4 < FSF3Uunits.length; un4++) {
+            var LanguagesUn1Button11 = document.createElement('button')
+            var LanguagesUn1ButtonTxt11 = document.createTextNode(FSF3Uunits[un4])
+            LanguagesUn1Button11.id = ('LanguagesUn1ButtonTxt11' + un4)//ID
+            LanguagesUn1Button11.appendChild(LanguagesUn1ButtonTxt11)
+            unitDiv11.appendChild(LanguagesUn1Button11)
         }//end of loop
     }
-    if (course == "AMS4U" && grade == "12") {
-        var AMS4Uunits = Object.values(courseInfoObj.grade12.Art.AMS4U.sections)
-        for (un32 = 0; un32 < AMS4Uunits.length; un32++) {
-            var ArtUn3Button = document.createElement('button')
-            var ArtUn3ButtonTxt = document.createTextNode(AMS4Uunits[un32])
-            ArtUn3Button.id = ('ArtUn3ButtonTxt' + un32)//ID
-            ArtUn3Button.appendChild(ArtUn3ButtonTxt)
-            unitDiv.appendChild(ArtUn3Button)
+    if (course == "LWSDU" && grade == "11") {
+        var LWSDUunits = Object.values(courseInfoObj.grade11.Languages.LWSDU.sections)
+        for (un52 = 0; un52 < LWSDUunits.length; un52++) {
+            var SocialStudiesUn3Button11 = document.createElement('button')
+            var SocialStudiesUn3ButtonTxt11 = document.createTextNode(LWSDUunits[un52])
+            SocialStudiesUn3Button11.id = ('SocialStudiesUn3ButtonTxt11' + un52)//ID
+            SocialStudiesUn3Button11.appendChild(SocialStudiesUn3ButtonTxt11)
+            unitDiv11.appendChild(SocialStudiesUn3Button11)
         }//end of loop
     }
-    if (course == "AWQ4M" && grade == "12") {
-        var AWQ4Munits = Object.values(courseInfoObj.grade12.Art.AWQ4M.sections)
-        for (un33 = 0; un33 < AWQ4Munits.length; un33++) {
-            var ArtUn4Button = document.createElement('button')
-            var ArtUn4ButtonTxt = document.createTextNode(AWQ4Munits[un33])
-            ArtUn4Button.id = ('ArtUn4ButtonTxt' + un33)//ID
-            ArtUn4Button.appendChild(ArtUn4ButtonTxt)
-            unitDiv.appendChild(ArtUn4Button)
+    if (course == "HSP3U" && grade == "11") {
+        var HSP3Uunits = Object.values(courseInfoObj.grade12.SocialStudies.HSP3U.sections)
+        for (un5 = 0; un5 < HSP3Uunits.length; un5++) {
+            var SocialStudiesUn1Button11 = document.createElement('button')
+            var SocialStudiesUn1ButtonTxt11 = document.createTextNode(HSP3Uunits[un5])
+            SocialStudiesUn1Button11.id = ('SocialStudiesUn1ButtonTxt' + un5)//ID
+            SocialStudiesUn1Button11.appendChild(SocialStudiesUn1ButtonTxt11)
+            unitDiv11.appendChild(SocialStudiesUn1Button11)
         }//end of loop
     }
-    if (course == "FSF4U" && grade == "12") {
-        var FSF4Uunits = Object.values(courseInfoObj.grade12.Languages.FSF4U.sections)
-        for (un4 = 0; un4 < FSF4Uunits.length; un4++) {
-            var LanguagesUn1Button = document.createElement('button')
-            var LanguagesUn1ButtonTxt = document.createTextNode(FSF4Uunits[un4])
-            LanguagesUn1Button.id = ('LanguagesUn1ButtonTxt' + un4)//ID
-            LanguagesUn1Button.appendChild(LanguagesUn1ButtonTxt)
-            unitDiv.appendChild(LanguagesUn1Button)
+    if (course == "HZB3M" && grade == "11") {
+        var HZB3Munits = Object.values(courseInfoObj.grade12.SocialStudies.HZB3M.sections)
+        for (un51 = 0; un51 < HZB3Munits.length; un51++) {
+            var SocialStudiesUn2Button11 = document.createElement('button')
+            var SocialStudiesUn2ButtonTxt11 = document.createTextNode(HZB3Munits[un51])
+            SocialStudiesUn2Button11.id = ('SocialStudiesUn2ButtonTxt11' + un51)//ID
+            SocialStudiesUn2Button11.appendChild(SocialStudiesUn2ButtonTxt11)
+            unitDiv11.appendChild(SocialStudiesUn2Button11)
         }//end of loop
     }
-    if (course == "HSB4U" && grade == "12") {
-        var HSB4Uunits = Object.values(courseInfoObj.grade12.SocialStudies.HSB4U.sections)
-        for (un5 = 0; un5 < HSB4Uunits.length; un5++) {
-            var SocialStudiesUn1Button = document.createElement('button')
-            var SocialStudiesUn1ButtonTxt = document.createTextNode(HSB4Uunits[un5])
-            SocialStudiesUn1Button.id = ('SocialStudiesUn1ButtonTxt' + un5)//ID
-            SocialStudiesUn1Button.appendChild(SocialStudiesUn1ButtonTxt)
-            unitDiv.appendChild(SocialStudiesUn1Button)
-        }//end of loop
-    }
-    if (course == "HZT4U" && grade == "12") {
-        var HZT4Uunits = Object.values(courseInfoObj.grade12.SocialStudies.HZT4U.sections)
-        for (un51 = 0; un51 < HZT4Uunits.length; un51++) {
-            var SocialStudiesUn2Button = document.createElement('button')
-            var SocialStudiesUn2ButtonTxt = document.createTextNode(HZT4Uunits[un51])
-            SocialStudiesUn2Button.id = ('SocialStudiesUn2ButtonTxt' + un51)//ID
-            SocialStudiesUn2Button.appendChild(SocialStudiesUn2ButtonTxt)
-            unitDiv.appendChild(SocialStudiesUn2Button)
-        }//end of loop
-    }
-    if (course == "CHY4U" && grade == "12") {
-        var CHY4Uunits = Object.values(courseInfoObj.grade12.SocialStudies.CHY4U.sections)
-        for (un52 = 0; un52 < CHY4Uunits.length; un52++) {
-            var SocialStudiesUn3Button = document.createElement('button')
-            var SocialStudiesUn3ButtonTxt = document.createTextNode(CHY4Uunits[un52])
-            SocialStudiesUn3Button.id = ('SocialStudiesUn3ButtonTxt' + un52)//ID
-            SocialStudiesUn3Button.appendChild(SocialStudiesUn3ButtonTxt)
-            unitDiv.appendChild(SocialStudiesUn3Button)
-        }//end of loop
-    }
-    document.getElementById('unitDiv').addEventListener('click', function (f) {
+    document.getElementById('unitDiv11').addEventListener('click', function (f) {
         button1 = f.target.id
         console.log(button1)
         num1 = button1.slice(-1)
         unit = Object.values(courseInfoObj.grade12[nospace][course]['sections'])[num1];
-        hideUnits()
-        showVideos()
+        hideUnitsEleven()
+        showVideosEleven()
     })
 }//end of showUnits
 
-function hideUnits() {
+function hideUnitsEleven() {
     document.body.removeChild(TitleDiv3)
     document.body.removeChild(backDiv3)
     document.body.removeChild(unitDiv)
@@ -360,7 +329,7 @@ function hideUnits() {
 
 //vvvv=======SHOW RESOURCES======vvvvvv
 
-function showVideos() {
+function showVideosEleven() {
     var backDiv4 = document.createElement("div4");
     backDiv4.id = "backDiv4";
     document.body.appendChild(backDiv4);
@@ -382,12 +351,12 @@ function showVideos() {
     TitleDiv4.appendChild(title4)
 
     backToUnits.addEventListener('click', function () {
-        hideVideos()
-        showUnits()
+        hideVideosEleven()
+        showUnitsEleven()
     })
 }
 
-function hideVideos() {
+function hideVideosEleven() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
     //document.body.removeChild(unitDiv)

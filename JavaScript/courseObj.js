@@ -105,5 +105,97 @@ courseInfoObj = {
                 summativeType: 'Exam'
             }
         },
+    },
+    grade11: {
+        English: {
+            ENG3U: {
+                simpleName: 'English',
+                sections: ['Intro to ENG3U', 'Non-Fiction', 'Novel Study', 'Poetry', 'Drama Study', 'ISU'],
+                summativeType: 'ISU'
+            }
+        },
+        STEM: {
+            MCR3U: {
+                simpleName: 'Functions',
+                sections: ['Intro to MCR3U','Algebraic Expressions', 'Quadratic Functions', 'Exponential Functions', 'Applications of Trig', 'Discrete Functions', 'Exam'],
+                summativeType: 'Exam'
+            },
+            SBI3U: {
+                simpleName: 'Biology',
+                sections: ['Intro to SBI3U','Diversity of Living Things', 'Evolution', 'Genetic Processes', 'Animals: Structure and Function', 'Plants: Anatomy, Growth, and Function', 'Exam'],
+                summativeType: 'Exam'
+            },
+            SCH3U: {
+                simpleName: 'Chemistry',
+                sections: ['Intro to SCH3U','Matter and Chemical Reactions', 'Quantities in Chemical Reactions', 'Solutions and Solubility', 'Gases and Atmospheric Chemistry', 'Exam'],
+                summativeType: 'Exam'
+            },
+            SPH3U: {
+                simpleName: 'Physics',
+                sections: ['Intro to SPH3U','Kinematics', 'Forces', 'Energy and Society', 'Waves and Sound', 'Electricity and Magnetism', 'Exam'],
+                summativeType: 'Exam'
+            },
+            TDJ3M: {
+                simpleName: 'Technological Design',
+                sections: ['Intro to TDJ3M','Design Theory', 'Measurement', 'General Safety', 'Technical Drawing', 'Model Making', 'Woodshop Project', 'Summative'],
+                summativeType: 'Summative'
+            },
+            TGJ3M: {
+                simpleName: 'Communications Tecnology',
+                sections: ['Intro to TGJ3M','Professional Practise', 'Graphic Design', 'Photography', 'Animation', 'Audio Production', 'Summative'],
+                summativeType: 'Summative'
+            },
+            ICS3U: {
+                simpleName: 'Computer and Information Science',
+                sections: ['Intro to ICS3U','Computers and Society', 'Programming Fundamentals', 'Data Structures', 'Algorythms and Software Design','Summative'],
+                summativeType: 'Summative'
+            },
+        },
+        Art: {
+            ADA3M: {
+                simpleName: 'Dramatic Arts',
+                sections: ['Intro to ADA3M','Acting Theory', 'Technical Theatre', 'Original and Adapted Works', 'Theatre History', 'Script Analysis', 'Summative'],
+                summativeType: 'Summative'
+            },
+            AVI3M: {
+                simpleName: 'Visual Arts',
+                sections: ['Intro to AVI3M','Drawing', 'Acrylic and Passage Painting', 'Art History', 'Clay', 'Artist Inspired Art', 'Summative'],
+                summativeType: 'Summative'
+            },
+            AMS3U: {
+                simpleName: 'Music',
+                sections: ['Intro to AMS3U','Knowledge of String Intrument', 'Analysis of Canadian Music', 'Intro to Writing Music', 'Summative'],
+                summativeType: 'Summative'
+            },
+            AWQ3M: {
+                simpleName: 'Photography',
+                sections: ['Intro to AWQ3M','Understanding the Camera', 'Elements and Principles of Photography', 'Photographic Manipulation', 'History of Photography','Influencial Photographers and Careers', 'Summative'],
+                summativeType: 'Summative'
+            }
+        },
+        SocialStudies: {
+            HSP3U: {
+                simpleName: 'Introduction to Anthropology, Psychology, and Sociology',
+                sections: ['Intro to HSP3U','Anthropology', 'Psychology', 'Sociology', 'Exam'],
+                summativeType: 'Exam'
+            },
+            HZB3U: {
+                simpleName: 'Philosophy',
+                sections: ['Intro to HZB3U','Epistemology', 'Individual Identity', 'Morality', 'Political Philosophy', 'Existentialism', 'Applications of Philosophy', 'Summative'],
+                summativeType: 'Summative'
+            }
+        },
+        Languages: {
+            FSF3U: {
+                simpleName: 'French',
+                sections: ['Intro to FSF3U','Self Presentation', 'Short Stories', 'Art, Poetry, and Music', 'Nutrition', 'Exam'],
+                summativeType: 'Exam'
+            },
+            LWSDU: {
+                simpleName: 'Spanish',
+                sections: ['Intro to LWSDU','Clothing', 'Morning Routines', 'Past and Present Tense', 'Travel', 'Exam'],
+                summativeType: 'Exam'
+            }
+        }
     }
 }
