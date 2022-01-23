@@ -1,3 +1,7 @@
+document.getElementById('player0').style.display = 'none'
+document.getElementById('player1').style.display = 'none'
+document.getElementById('player2').style.display = 'none'
+
 var course = "" //example: ENG4U
 var topic = "" //example: Social Studies
 var nospace = "" //example: SocialStudies
