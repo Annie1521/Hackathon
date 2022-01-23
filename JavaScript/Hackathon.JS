@@ -583,7 +583,7 @@ function showVideos() {
     showVideoAPI()
 
 
-    alert(course)
+    //alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
@@ -601,14 +601,25 @@ function showVideos() {
 function hideVideos() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
+    document.body.removeChild(addResDiv);
+    //document.body.removeChild(unitDiv)
+
+
+document.getElementById('player0').style.display = 'none'
+document.getElementById('player1').style.display = 'none'
+document.getElementById('player2').style.display = 'none'
+document.getElementById('player0').src = ''
+document.getElementById('player1').src = ''
+document.getElementById('player1').src = ''
     
+    document.getElementById('player0').style.diplay = 'none'
+    document.getElementById('player1').style.diplay = 'none'
+    document.getElementById('player2').style.diplay = 'none'
+
 document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player2').src = ''
 
-document.getElementById('player0').style.diplay = 'none'
-document.getElementById('player1').style.diplay = 'none'
-document.getElementById('player2').style.diplay = 'none'
     //document.body.removeChild(unitDiv)
 }
 
