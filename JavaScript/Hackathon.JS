@@ -545,7 +545,9 @@ function showVideos() {
 
 
 
+    alert(UnitNoSpace)
 
+    CourseName(course.UnitNoSpace[1],course.UnitNoSpace[2])
 
 
 
