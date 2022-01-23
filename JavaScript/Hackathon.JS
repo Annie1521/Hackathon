@@ -598,6 +598,7 @@ function showVideos() {
 function hideVideos() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
+    document.body.removeChild(addResDiv);
     //document.body.removeChild(unitDiv)
 
 
