@@ -161,6 +161,57 @@ function hideTopics() {
 
     if (topic == "English" && grade == "12") {
         var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+    if (topic == "STEM" && grade == "12") {
+        var STEMClasses = Object.keys(courseInfoObj.grade12.STEM)
+        for (e = 0; e<STEMClasses.length ; e++) {
+            var STEMButton = document.createElement('button')
+            var STEMButtonTxt = document.createTextNode(STEMClasses[e])
+            STEMButton.id = ('classButton' + e)//ID
+            STEMButton.appendChild(STEMButtonTxt)
+            classesDiv.appendChild(STEMButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Art" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        console.log(EnglishClasses)
+        console.log(EnglishClasses.length)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Languages" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
+        console.log(EnglishClasses)
+        console.log(EnglishClasses.length)
+        for (e = 0; e<EnglishClasses.length ; e++) {
+            var EnglishButton = document.createElement('button')
+            var EnglishButtonTxt = document.createTextNode(EnglishClasses[e])
+            EnglishButton.id = ('classButton' + e)//ID
+            EnglishButton.appendChild(EnglishButtonTxt)
+            classesDiv.appendChild(EnglishButton)
+        }//end of loop
+    }
+
+
+    if (topic == "Social Studies" && grade == "12") {
+        var EnglishClasses = Object.keys(courseInfoObj.grade12.English)
         console.log(EnglishClasses)
         console.log(EnglishClasses.length)
         for (e = 0; e<EnglishClasses.length ; e++) {
