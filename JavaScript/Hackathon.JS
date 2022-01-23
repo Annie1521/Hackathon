@@ -612,6 +612,12 @@ function hideVideos() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
     //document.body.removeChild(unitDiv)
+document.getElementById('player0').style.display = 'none'
+document.getElementById('player1').style.display = 'none'
+document.getElementById('player2').style.display = 'none'
+document.getElementById('player0').src = ''
+document.getElementById('player1').src = ''
+document.getElementById('player2').src = ''
 }
 
 //button text becomes search criteria for youtube API
