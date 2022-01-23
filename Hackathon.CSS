@@ -1101,3 +1101,14 @@ body{
     font-family: PT sans;
     font-size: 2vw;
 }
+.showResBtn{
+    background-color: #c5c6c6;
+    width: 25%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw;
+}

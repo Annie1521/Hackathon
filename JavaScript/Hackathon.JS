@@ -585,6 +585,7 @@ function showVideos() {
     var ResBtn = document.createElement("button")
     var ResBtnTxt = document.createTextNode("More Resources")
     ResBtn.id = (UnitNoSpace+"res")//ID
+    ResBtn.className = "showResBtn";
     ResBtn.appendChild(ResBtnTxt)
     ResDiv.appendChild(ResBtn)
 
