@@ -1137,11 +1137,43 @@ body{
 
 #addResB{
     background-color: #c5c6c6;
-    width: 15%;       
+    width: 30%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 3%;
+    margin-right:1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw; 
+}
+
+#nameInput{
+    width: 10%;       
     padding-top: 1%;
     padding-bottom:1%;
     margin: 1%;
-    border-radius: 15px;
+    border-radius: 3px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw; 
+}
+#linkInput{
+    width: 20%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 3px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw; 
+}
+#commentInput{
+    width: 50%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 3px;
     border: none;
     font-family: PT sans;
     font-size: 3vw; 
