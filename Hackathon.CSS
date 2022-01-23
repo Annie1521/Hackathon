@@ -733,6 +733,10 @@ body{
     font-size: 3vw;
 }
 
+<<<<<<< HEAD
+.commentClass{
+    font-family: PT sans;
+=======
 #classesDiv11{
     width: 99%;
     margin-top: 8%;
@@ -1053,4 +1057,5 @@ body{
     border: none;
     font-family: PT sans;
     font-size: 2vw;
+>>>>>>> 13769fac4703065d7bc4b321e614b7e33812bedb
 }
