@@ -580,20 +580,7 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
-    showVideoAPI()
-
-    var ResDiv = document.createElement("div");
-    ResDiv.id = "ResDiv";
-    document.body.appendChild(ResDiv)
-
-    var ResBtn = document.createElement("button")
-    var ResBtnTxt = document.createTextNode("More Resources")
-    ResBtn.id = (UnitNoSpace+"res")//ID
-    ResBtn.className = "showResBtn";
-    ResBtn.appendChild(ResBtnTxt)
-    ResDiv.appendChild(ResBtn)
-
-    //alert(course)
+    alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
@@ -612,6 +599,14 @@ function hideVideos() {
     document.body.removeChild(TitleDiv4)
     document.body.removeChild(backDiv4)
     //document.body.removeChild(unitDiv)
+
+
+document.getElementById('player0').style.display = 'none'
+document.getElementById('player1').style.display = 'none'
+document.getElementById('player2').style.display = 'none'
+document.getElementById('player0').src = ''
+document.getElementById('player1').src = ''
+document.getElementById('player2').src = ''
 }
 
 //button text becomes search criteria for youtube API
