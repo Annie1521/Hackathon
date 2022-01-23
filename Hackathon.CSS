@@ -1134,3 +1134,15 @@ body{
     margin-left:50px;
     border-style:solid;
 }
+
+#addResB{
+    background-color: #c5c6c6;
+    width: 15%;       
+    padding-top: 1%;
+    padding-bottom:1%;
+    margin: 1%;
+    border-radius: 15px;
+    border: none;
+    font-family: PT sans;
+    font-size: 3vw; 
+}
