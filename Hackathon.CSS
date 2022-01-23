@@ -1103,18 +1103,22 @@ body{
 
 .newResourceClass{
     font-family: PT sans;
+    font-size: 3vw;
 }
 
 .namePClass{
     font-weight: bold;
+    font-size: 3vw;
 }
 
 .linkPClass{
     text-decoration: underline;
+    font-size: 3vw;
 }
 
 .commentPClass{
     border-style: solid;
+    font-size:3vw;
 }
 
 .replyBClass{
@@ -1123,16 +1127,19 @@ body{
 
 .replyDivClass{
     margin-left: 50px;
+    font-size: 3vw;
 }
 
 .repNamePClass{
     margin-left:50px;
     font-weight: bold;
+    font-size: 3vw;
 }
 
 .repCommentPClass{
     margin-left:50px;
     border-style:solid;
+    font-size: 3vw;
 }
 
 #addResB{
