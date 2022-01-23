@@ -152,7 +152,7 @@ function showClasses() {
 
     backToTopics.addEventListener('click', function () {
         hideClasses()
-        //showTopics()
+        showTopics()
     })
 
     function hideGrades() {
@@ -272,8 +272,9 @@ function showUnits() {
     TitleDiv3.appendChild(title3)
 
     backToClasses.addEventListener('click', function () {
-        //hideUnits()
+       hideUnits()
         //showTopics()
+        
     })
 
     var unitDiv = document.createElement("div");
@@ -293,3 +294,12 @@ function showUnits() {
     }
 
 }//end of showUnits
+
+
+function hideUnits(){
+    document.body.removeChild(TitleDiv3)
+    document.body.removeChild(backDiv3)
+    showClasses()
+
+
+}
