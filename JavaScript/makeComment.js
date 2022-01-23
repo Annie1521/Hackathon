@@ -98,6 +98,8 @@ addResB.addEventListener('click', function(){
                 makeText(repCommentV, repCommentP);
                 repCommentP.className = 'repCommentPClass';
                 commentDiv.appendChild(repCommentP);
+
+                document.getElementById("addResDiv").scrollIntoView();
             })
         })
     })
