@@ -578,6 +578,15 @@ function showVideos() {
 
     showVideoAPI()
 
+    var ResDiv = document.createElement("div");
+    ResDiv.id = "ResDiv";
+    document.body.appendChild(ResDiv)
+
+    var ResBtn = document.createElement("button")
+    var ResBtnTxt = document.createTextNode("More Resources")
+    ResBtn.id = (UnitNoSpace+"res")//ID
+    ResBtn.appendChild(ResBtnTxt)
+    ResDiv.appendChild(ResBtn)
 
     alert(course)
     //var resource = Object.values([course][UnitNoSpace])
