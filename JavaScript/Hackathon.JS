@@ -9,9 +9,14 @@ function showGrades(){
     document.body.appendChild(TitleDiv)
     var title = document.createElement("header");
     title.id = "title"
-    var titleTxt = document.createTextNode("Website Name")
+    var titleTxt = document.createTextNode("B.O.S.S.")
     title.appendChild(titleTxt)
     TitleDiv.appendChild(title)
+    var subtitle = document.createElement("header");
+    subtitle.id = "subtitle"
+    var subtitleTxt = document.createTextNode("The Brilliant Ontario Study System.")
+    subtitle.appendChild(subtitleTxt)
+    TitleDiv.appendChild(subtitle)
     var GradeDiv = document.createElement("div")
     GradeDiv.id = "GradeDiv";
     document.body.appendChild(GradeDiv);
@@ -88,4 +93,5 @@ function hideGrades() {
     document.body.removeChild(Grade10)
     document.body.removeChild(Grade11)
     document.body.removeChild(Grade12)
+    document.body.removeChild(TitleDiv)
 }
