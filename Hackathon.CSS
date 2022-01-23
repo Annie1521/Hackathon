@@ -1148,7 +1148,7 @@ body{
     font-size: 3vw; 
 }
 
-#nameInput{
+#nameInput,  #repNameInput{
     width: 10%;       
     padding-top: 1%;
     padding-bottom:1%;
@@ -1168,7 +1168,7 @@ body{
     font-family: PT sans;
     font-size: 3vw; 
 }
-#commentInput{
+#commentInput,  #repCommentInput{
     width: 50%;       
     padding-top: 1%;
     padding-bottom:1%;
@@ -1185,7 +1185,7 @@ body{
     margin-right:auto;
     text-align: center;
 }
-#postB{
+#postB, #repPostB, #replyB{
     background-color: #c5c6c6;
     width: 30%;       
     padding-top: 1%;
