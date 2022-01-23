@@ -594,7 +594,11 @@ function showVideos() {
     showVideoAPI()
 
 
+<<<<<<< HEAD
     // alert(course)
+=======
+    //alert(course)
+>>>>>>> a773f417f5e454ed3ae4270f910e28c0db21d708
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
@@ -623,13 +627,14 @@ document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player1').src = ''
     
+    document.getElementById('player0').style.diplay = 'none'
+    document.getElementById('player1').style.diplay = 'none'
+    document.getElementById('player2').style.diplay = 'none'
+
 document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player2').src = ''
 
-document.getElementById('player0').style.diplay = 'none'
-document.getElementById('player1').style.diplay = 'none'
-document.getElementById('player2').style.diplay = 'none'
     //document.body.removeChild(unitDiv)
 }
 

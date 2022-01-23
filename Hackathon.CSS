@@ -1134,8 +1134,3 @@ body{
     margin-left:50px;
     border-style:solid;
 }
-
-#player0, #player1, #player2{
-    width: 50%
-    height:50%
-}
