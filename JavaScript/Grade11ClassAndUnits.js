@@ -285,11 +285,11 @@ function showUnitsEleven() {
     if (course == "LWSDU" && grade == "11") {
         var LWSDUunits = Object.values(courseInfoObj.grade11.Languages.LWSDU.sections)
         for (un52 = 0; un52 < LWSDUunits.length; un52++) {
-            var SocialStudiesUn3Button11 = document.createElement('button')
-            var SocialStudiesUn3ButtonTxt11 = document.createTextNode(LWSDUunits[un52])
-            SocialStudiesUn3Button11.id = ('SocialStudiesUn3ButtonTxt11' + un52)//ID
-            SocialStudiesUn3Button11.appendChild(SocialStudiesUn3ButtonTxt11)
-            unitDiv11.appendChild(SocialStudiesUn3Button11)
+            var LanguagesUn3Button11 = document.createElement('button')
+            var LanguagesUn3ButtonTxt11 = document.createTextNode(LWSDUunits[un52])
+            LanguagesUn3Button11.id = ('LanguagesUn3ButtonTxt11' + un52)//ID
+            LanguagesUn3Button11.appendChild(LanguagesUn3ButtonTxt11)
+            unitDiv11.appendChild(LanguagesUn3Button11)
         }//end of loop
     }
     if (course == "HSP3U" && grade == "11") {
@@ -347,7 +347,7 @@ function showVideosEleven() {
 
     var title4 = document.createElement("header");
     title4.id = "title4"
-    var titleTxt4 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + ": " + unit)
+    var titleTxt4 = document.createTextNode("Grade 11 " + courseInfoObj.grade11[nospace][course].simpleName + ": " + unit)
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
