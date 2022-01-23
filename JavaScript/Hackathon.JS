@@ -560,30 +560,9 @@ function hideUnits() {
 
 //vvvv=======SHOW RESOURCES======vvvvvv
 function showVideos() {
-    
-    // var backDiv4 = document.createElement("div4");
-    // backDiv4.id = "backDiv4";
-    // document.body.prepend(backDiv4);
-
-    // var backToUnits = document.createElement('button')
-    // var backToUnitsTxt = document.createTextNode('Back')
-    // backToUnits.id = 'backToUnits'//ID
-    // backToUnits.appendChild(backToUnitsTxt)
-    // backDiv4.appendChild(backToUnits)
-
-    var TitleDiv4 = document.createElement("div");
-    TitleDiv4.id = "TitleDiv4";
-    document.body.prepend(TitleDiv4)
-
-    var title4 = document.createElement("header");
-    title4.id = "title4"
-    var titleTxt4 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + ": " + unit)
-    title4.appendChild(titleTxt4)
-    TitleDiv4.appendChild(title4)
-
     var backDiv4 = document.createElement("div4");
     backDiv4.id = "backDiv4";
-    document.body.prepend(backDiv4);
+    document.body.appendChild(backDiv4);
 
     var backToUnits = document.createElement('button')
     var backToUnitsTxt = document.createTextNode('Back')
@@ -591,14 +570,20 @@ function showVideos() {
     backToUnits.appendChild(backToUnitsTxt)
     backDiv4.appendChild(backToUnits)
 
+    var TitleDiv4 = document.createElement("div");
+    TitleDiv4.id = "TitleDiv4";
+    document.body.appendChild(TitleDiv4)
+
+    var title4 = document.createElement("header");
+    title4.id = "title4"
+    var titleTxt4 = document.createTextNode("Grade 12 " + courseInfoObj.grade12[nospace][course].simpleName + ": " + unit)
+    title4.appendChild(titleTxt4)
+    TitleDiv4.appendChild(title4)
+
     showVideoAPI()
 
 
-<<<<<<< HEAD
     // alert(course)
-=======
-    //alert(course)
->>>>>>> a773f417f5e454ed3ae4270f910e28c0db21d708
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
@@ -627,14 +612,13 @@ document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player1').src = ''
     
-    document.getElementById('player0').style.diplay = 'none'
-    document.getElementById('player1').style.diplay = 'none'
-    document.getElementById('player2').style.diplay = 'none'
-
 document.getElementById('player0').src = ''
 document.getElementById('player1').src = ''
 document.getElementById('player2').src = ''
 
+document.getElementById('player0').style.diplay = 'none'
+document.getElementById('player1').style.diplay = 'none'
+document.getElementById('player2').style.diplay = 'none'
     //document.body.removeChild(unitDiv)
 }
 
