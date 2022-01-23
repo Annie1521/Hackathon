@@ -19,12 +19,12 @@ courseInfoObj = {
         },
         STEM: {
             MCV4U: {
-                simpleName: 'Calculus',
+                simpleName: 'Calculus and Vectors',
                 sections: ['Derivatives', 'Vectors', 'Planes', 'Exponential Functions'],
                 summativeType: 'Exam'
             },
             MHF4U: {
-                simpleName: 'Functions',
+                simpleName: 'Advanced Functions',
                 sections: ['Polynomial Functions', 'Polynomial Inequalities', 'Trigonometric Functions', 'Exponential and Logarithmic Functions', 'Combining Functions'],
                 summativeType: 'Exam'
             },
@@ -59,7 +59,7 @@ courseInfoObj = {
                 summativeType: ''
             },
         },
-        Arts: {
+        Art: {
             ADA4M: {
                 simpleName: 'Dramatic Arts',
                 sections: ['Techniques and Concentions', 'Real Life Drama', 'Character Delopement', 'Theatre History', 'Culture'],
@@ -81,7 +81,7 @@ courseInfoObj = {
                 summativeType: ''
             }
         },
-        'Social Studies': {
+        SocialStudies: {
             HSB4U: {
                 simpleName: 'Challenge and Change',
                 sections: ['Social Change', 'Social Patterns and Trends', 'Global Social Change'],
