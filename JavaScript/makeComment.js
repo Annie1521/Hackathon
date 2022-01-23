@@ -27,7 +27,7 @@ commentInput.id = 'commentInput';
 commentInput.placeholder = 'Additional Comment';
 inputDiv.appendChild(commentInput);
 
-var postB = document.createElement('postB');
+var postB = document.createElement('button');
 postB.id = 'postB';
 makeText('Post', postB);
 inputDiv.appendChild(postB);
@@ -46,22 +46,60 @@ addResB.addEventListener('click', function(){
 
         var nameP = document.createElement('p');
         makeText(nameV, nameP);
-        nameP.id = 'nameP';
+        nameP.className = 'namePClass';
         commentDiv.appendChild(nameP);
 
         var linkP = document.createElement('p');
         makeText(linkV, linkP);
-        linkP.id = 'linkP';
+        linkP.className = 'linkPClass';
         commentDiv.appendChild(linkP);
 
         var commentP = document.createElement('p');
         makeText(commentV, commentP);
-        commentP.id = 'commentP';
+        commentP.className = 'commentPClass';
         commentDiv.appendChild(commentP);
 
         var replyB = document.createElement('button');
         makeText('Reply', replyB);
+        replyB.id = 'replyB';
+        replyB.className = 'replyBClass'
         commentDiv.appendChild(replyB);
+        replyB.addEventListener('click', function(){
+            var replyDiv = document.createElement('div');
+            replyDiv.className = 'relplyDivClass';
+            commentDiv.appendChild(replyDiv);
+
+            var repNameInput = document.createElement('input');
+            repNameInput.placeholder = 'Name';
+            repNameInput.id = 'repNameInput';
+            replyDiv.appendChild(repNameInput);
+
+            var repCommentInput = document.createElement('input');
+            repCommentInput.placeholder = 'Comment';
+            repCommentInput.id = 'repCommentInput';
+            replyDiv.appendChild(repCommentInput);
+
+            var repPostB = document.createElement('button');
+            makeText('Post', repPostB);
+            repPostB.id = 'repPostB';
+            replyDiv.appendChild(repPostB);
+
+            repPostB.addEventListener('click', function(){
+                replyDiv.style.display = 'none';
+                var repNameV = repNameInput.value;
+                var repCommentV = repCommentInput.value;
+
+                var repNameP = document.createElement('p');
+                makeText(repNameV, repNameP);
+                repNameP.className = 'repNamePClass';
+                commentDiv.appendChild(repNameP);
+
+                var repCommentP = document.createElement('p');
+                makeText(repCommentV, repCommentP);
+                repCommentP.className = 'repCommentPClass';
+                commentDiv.appendChild(repCommentP);
+            })
+        })
     })
 })
 }

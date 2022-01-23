@@ -1,7 +1,3 @@
-document.getElementById('player0').style.display = 'none'
-document.getElementById('player1').style.display = 'none'
-document.getElementById('player2').style.display = 'none'
-
 var course = "" //example: ENG4U
 var topic = "" //example: Social Studies
 var nospace = "" //example: SocialStudies
@@ -580,20 +576,7 @@ function showVideos() {
     title4.appendChild(titleTxt4)
     TitleDiv4.appendChild(title4)
 
-    showVideoAPI()
-
-    var ResDiv = document.createElement("div");
-    ResDiv.id = "ResDiv";
-    document.body.appendChild(ResDiv)
-
-    var ResBtn = document.createElement("button")
-    var ResBtnTxt = document.createTextNode("More Resources")
-    ResBtn.id = (UnitNoSpace+"res")//ID
-    ResBtn.className = "showResBtn";
-    ResBtn.appendChild(ResBtnTxt)
-    ResDiv.appendChild(ResBtn)
-
-    //alert(course)
+    alert(course)
     //var resource = Object.values([course][UnitNoSpace])
     //console.log(resource)
 
