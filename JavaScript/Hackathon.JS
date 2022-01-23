@@ -61,14 +61,6 @@ function hideGrades(){
 //vvvv=======SHOW TOPICS======vvvvvv
 function showTopics() {
     hideGrades()
-    var TitleDiv1 = document.createElement("div");
-    TitleDiv1.id = "TitleDiv1";
-    document.body.appendChild(TitleDiv1)
-    var title1 = document.createElement("header");
-    title1.id = "title1"
-    var titleTxt1 = document.createTextNode("Grade " + grade)
-    title1.appendChild(titleTxt1)
-    TitleDiv1.appendChild(title1)
     var backDiv = document.createElement("div");
     backDiv.id = "backDiv";
     document.body.appendChild(backDiv);
@@ -77,7 +69,14 @@ function showTopics() {
     backTogrades.id = 'backToGrades'//ID
     backTogrades.appendChild(backTogradesTxt)
     backDiv.appendChild(backTogrades)
-
+    var TitleDiv1 = document.createElement("div");
+    TitleDiv1.id = "TitleDiv1";
+    document.body.appendChild(TitleDiv1)
+    var title1 = document.createElement("header");
+    title1.id = "title1"
+    var titleTxt1 = document.createTextNode("Grade " + grade)
+    title1.appendChild(titleTxt1)
+    TitleDiv1.appendChild(title1)
 
     backTogrades.addEventListener('click', function () {
         hideTopics()
