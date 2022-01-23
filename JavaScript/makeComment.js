@@ -1,5 +1,5 @@
 function makeComment(){
-var addResDiv = document.createElement('div');
+addResDiv = document.createElement('div');
 addResDiv.id = 'addResDiv';
 document.body.appendChild(addResDiv);
 
